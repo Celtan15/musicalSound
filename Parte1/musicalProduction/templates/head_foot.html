@@ -1,0 +1,14 @@
+<html>
+    <head>
+        {% include "top_bar/bar.html" %}
+        <title>
+            {% block title %} {% endblock %}
+        </title>
+    </head>
+    <body>
+        <h1 style='background-color: teal; color: orange; text-align: center;'>Título común para todas las paginas</h1>
+        <h3>Subtítulo común para todas las páginas</h3>
+        {% block content %} {% endblock %}
+        <p style='background-color: teal; color: orange; text-align: right;'>Pie de página</p>
+    </body>
+</html>
