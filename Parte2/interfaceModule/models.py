@@ -18,23 +18,23 @@ class Person(models.Model):
     psdw=models.CharField(PasswordInput, max_length=15)
     country=models.CharField(max_length=30)
     dateBirt=models.DateField()
-    phone=models.CharField(max_length=20)
+    phone=models.CharField(max_length=20, blank=True)
 
 class  InterfaceEvaluation(models.Model):
     name=models.CharField(max_length=50)
-    answer=models.CharField(max_length=5)
-    question=models.CharField(max_length=5)
-    qualification=models.DecimalField(max_digits=5, decimal_places=3)
-
-class InterfaceModule(models.Model):
-    name=models.CharField(max_length=50)
-    quantityMicroModules=IntegerField()
-    moduleLocked=BooleanField()
-    state=BooleanField()
-    progression=DecimalField()
+    answer=models.CharField(max_length=5, blank=True)
+    question=models.CharField(max_length=5, blank=True)
+    qualification=models.DecimalField(max_digits=5, decimal_places=3, blank=True)
 
 class User(Person):
     totalProgresion=DecimalField()
 
 class Admin(Person):
-    addedUsers=IntegerField
+    addedUsers=IntegerField()
+    
+class InterfaceModule(models.Model):
+    name=models.CharField(max_length=50)
+    moduleLocked=models.BooleanField(True)
+    state=models.BooleanField(blank=False)
+    progression=models.DecimalField(max_digits=4, decimal_places=2)
+    quantityMicroModules=models.IntegerField(blank=True)

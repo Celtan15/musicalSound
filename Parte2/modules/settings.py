@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'modules.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'musical_production',
+        'NAME': 'learning_musical_production',
         'USER':'postgres',
         'PASSWORD': '9090',
         'HOST': '127.0.0.1',
