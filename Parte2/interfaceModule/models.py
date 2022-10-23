@@ -14,10 +14,11 @@ from django.forms import BooleanField, DecimalField, EmailField, IntegerField, P
 class Person(models.Model):
     id=models.CharField(primary_key=True,max_length=50)
     name=models.CharField(max_length=50)
+    nickname=models.CharField(unique=True,max_length=50)
     email=models.EmailField()
     psdw=models.CharField(PasswordInput, max_length=15)
     country=models.CharField(max_length=30)
-    dateBirt=models.DateField()
+    dateBirth=models.DateField()
     phone=models.CharField(max_length=20, blank=True)
 
 class  InterfaceEvaluation(models.Model):
