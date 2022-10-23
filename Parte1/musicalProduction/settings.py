@@ -54,7 +54,7 @@ ROOT_URLCONF = 'musicalProduction.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/Users/diego/OneDrive/Documentos/DjangoProjects/AprendizajeProduccionMusical/musicalProduction/musicalProduction/templates/'],
+        'DIRS': ['C:/Users/diego/OneDrive/Documentos/DjangoProjects/AprendizajeProduccionMusical/musicalProduction/Parte1/musicalProduction/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
