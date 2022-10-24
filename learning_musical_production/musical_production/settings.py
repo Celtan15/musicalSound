@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'base_app',
-    'interface_module_app'
+    'interface_module_app',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'musical_production.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/Users/diego/OneDrive/Documentos/DjangoProjects/AprendizajeProduccionMusical/musicalProduction/Parte1/musicalProduction/templates/'],
+        'DIRS': ['C:/Users/diego/OneDrive/Documentos/DjangoProjects/AprendizajeProduccionMusical/musicalProduction/leargning_musical_production/musical_production/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -77,14 +77,13 @@ WSGI_APPLICATION = 'musical_production.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'learning_musical_production',
+        'NAME': 'musical_production',
         'USER':'postgres',
         'PASSWORD': '9090',
         'HOST': '127.0.0.1',
         'PORT': '8080',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -108,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-eu'
 
 TIME_ZONE = 'UTC'
 
