@@ -7,7 +7,6 @@ from unicodedata import decimal
 from unittest.util import _MAX_LENGTH
 from xml.dom.minidom import Identified
 from django.db import models
-
 from django.forms import BooleanField, DateField, DecimalField, EmailField, IntegerField, PasswordInput
 
 # La base de datos genera automáticamente el id, se puede sobreescribir de ser necesario, revisar si
@@ -17,19 +16,18 @@ class User(models.Model):
     name=models.CharField(max_length=50)
     nickname=models.CharField(unique=True,max_length=50)
     email=models.EmailField()
-    psdw=models.CharField(PasswordInput, max_length=15)
+    psdw=models.CharField("Password", max_length=16)
     country=models.CharField(max_length=30)
     date_birth=models.DateField()
     phone=models.CharField(max_length=20, blank=True)
-    progression=models.DecimalField(max_digits=4, decimal_places=2)
+    progression=models.DecimalField(max_digits=4, decimal_places=2, blank=True, null=True)
 
     class Meta:
         verbose_name='user_interface_module'
-        verbose_name_plural='users'
+        verbose_name_plural='users_interface'
 
     def __str__(self):
-        return 'El usuario se llama %s , su nickname es %s , su correo es %s, reside en %s y tiene un progreso actual de %s%' %(self.name,
-        self.nickname, self.email, self.country, self.progression)
+        return 'El usuario se llama %s , su nickname es %s , su correo es %s, reside en %s' %(self.name, self.nickname, self.email, self.country)
 
 class Interface_evaluation(models.Model):
     name=models.CharField(max_length=50)
