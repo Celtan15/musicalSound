@@ -1,2 +1,2 @@
-# musicalProduction
-Este proyecto está enfocado en el aprendizaje de la producción musical sin conocimientos previos, para desarrollar esta aplicación se utiliza el lenguaje de programación Python y su correspondiente framework de desarrollo Django
+# musicalSound
+Musical sound es una plataforma de aprendizaje de teoría musical sin conocimientos previos, es una aplicación sencilla, dinámica e interactiva, posee diferentes módulos de aprendizaje y micro módulos para un aprendizaje más sencillo. Se desarrolló con el framework Django con su respectivo lenguaje de programación: Pythonm utiliza la base de datos postgreSQL, utiliza CSS y HTML para el diseño del frontend, además la aplicación se despliega en AWS
