@@ -3,6 +3,9 @@ from django.http import HttpResponse
 
 def login(request):
     return render(request, 'base_app/login.html/')
+    
+def sign_up(request):
+    return render(request, 'base_app/sign_up.html/')
 
 def home(request):
     return render(request, 'base_app/home.html/')
