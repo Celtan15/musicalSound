@@ -1,2 +1,2 @@
-# musicalSound
+# Musical Sound
 Musical sound es una plataforma de aprendizaje de producción musical sin conocimientos previos, es una aplicación sencilla, dinámica e interactiva, posee diferentes módulos de aprendizaje y micro módulos para hacer más sencillo el proceso. Se desarrolló con el framework Django con su respectivo lenguaje de programación: Python, utiliza la base de datos postgreSQL, utiliza CSS y HTML para el diseño del frontend, además la aplicación se despliega en AWS
