@@ -73,7 +73,6 @@ p {
   font-size: 1rem;
   text-transform: none;
   font-weight: 300;
-  margin-top:.5rem;
 }
 
 .bg-faded {
@@ -99,9 +98,9 @@ p {
   text-decoration: underline;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
   #mainNav .navbar-nav .nav-item .nav-link {
-    font-size: 0.9rem;
+    font-size: 1.0rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
     color: rgb(178, 34, 34);

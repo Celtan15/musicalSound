@@ -14,6 +14,12 @@ def test(request):
         mensaje='No has seleccionado una respuesta'
     return HttpResponse(mensaje)
 
+def learning_interface(request):
+    return render(request, 'index.html')
+
+def learning_options_panel(request):
+    return render(request, 'learning_options_panel.html')
+
 ''' A continuación el método para enviar emails con form, email de usuario hace referencia al email loggeado en la
 aplicacion, mientras que send mail aún no se ha construido, revisar el documento TO DO para ver más informacion
 def feedback(request):

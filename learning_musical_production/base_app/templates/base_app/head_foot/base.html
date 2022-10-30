@@ -8,22 +8,15 @@
     <link href="{% static 'base_app/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
      <!-- Fonts -->
-    
      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
      <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
      
 
     <!-- Styles -->
-    <link href="{% static 'base_app/css/gestion.css ' %}" rel="stylesheet">
+    <link href="{% static 'base_app/css/manage.css ' %}" rel="stylesheet">
 </head>
 
 <body>
-
-    <h1 class="site-heading text-center text-white d-none d-lg-block">
-      
-        <span class="site-heading-lower">Musical Sound</span>
-      </h1>
-
  <!-- Navbar -->
  <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
     <div class="container">
@@ -33,29 +26,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item {% if request.path == '/login/' %}active{% endif %} px-lg-0">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'Login' %}">Login</a>
-          </li>
-          <li class="nav-item {% if request.path == '/sign_up/' %}active{% endif %} px-lg-3">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'Sign_up' %}">Sign-up</a>
-          </li>
           <li class="nav-item {% if request.path == '/' %}active{% endif %} px-lg-3">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'Home' %}">Home</a>
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Home' %}">Musical Sound</a>
           </li>
-          <li class="nav-item {% if request.path == '/learning_interface/' %}active{% endif %} px-lg-3">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'Learning_interface' %}">Aprende interfaz</a>
-          </li>
-          <li class="nav-item {% if request.path == '/learning_mixture/' %}active{% endif %} px-lg-3">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'Learning_mixture' %}">Aprenda mezcla de sonido</a>
-          </li>
-          <li class="nav-item {% if request.path == '/learning_mastering/' %}active{% endif %} px-lg-3">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'Learning_mastering' %}">Aprenda masterización</a>
-          </li>
-          <li class="nav-item {% if request.path == '/evaluations/' %}active{% endif %} px-lg-3">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'Evaluations' %}">Valida tu conocimiento</a>
-          </li>
-          <li class="nav-item {% if request.path == '/tips/' %}active{% endif %} px-lg-3">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'Tips' %}">Tips</a>
           </li>
           <li class="nav-item {% if request.path == '/who_we_are/' %}active{% endif %} px-lg-3">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Who_we_are' %}">¿Quienes somos?</a>
@@ -65,6 +38,12 @@
           </li>
           <li class="nav-item {% if request.path == '/feedback/' %}active{% endif %} px-lg-3">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Feedback' %}">Sugerencias</a>
+          </li>
+          <li class="nav-item {% if request.path == '/sign_up/' %}active{% endif %}", style="margin-left: 18rem">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Sign_up' %}">Sign up</a>
+          </li>
+          <li class="nav-item {% if request.path == '/login/' %}active{% endif %}", style="margin-left: 0.3rem">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Login' %}">Login</a>
           </li>
         </ul>
       </div>

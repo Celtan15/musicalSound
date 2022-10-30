@@ -10,8 +10,10 @@ def sign_up(request):
 def home(request):
     return render(request, 'base_app/home.html/')
 
+'''
 def learning_interface(request):
     return render(request, 'base_app/learning_interface.html/')
+'''
 
 def learning_mixture(request):
     return render(request, 'base_app/learning_mixture.html/')
@@ -33,3 +35,6 @@ def about(request):
 
 def feedback(request):
     return render(request, 'base_app/feedback.html/')
+
+def index(request):
+    return render(request, 'base_app/index.html/')
