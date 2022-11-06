@@ -1,12 +1,78 @@
 {% extends 'base_app/head_foot/base.html' %}
-
 {% load static %}
-
 {% block content %}
-<html>
-    <title>Sign up</title>
-    <body style="color:white">
-        Aquí va todo lo referente al registro en la apk
-    </body>
-</html>
+
+<section class="vh-100" style="margin-top: 2rem; margin-bottom: 20rem;">
+    <link href="{% static 'base_app/css/manage.css' %}" rel="stylesheet">
+    <h1 style="color: white; text-align: center; margin-bottom: 2rem;">Regístrate</h1>
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          <img src="{% static 'base_app/img/img_random.jpg' %}"
+            class="img-fluid" alt="Sample image">
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+            <form>
+              <!-- Cédula input -->
+              
+              <div class="form-outline mb-3">
+                <input type="text" id="form3Example4" class="form-control form-control-lg"
+                  placeholder="Cédula" />
+                <label class="form-label" for="form3Example4" style="color: white;">Cédula</label>
+              </div>
+
+              <div class="form-outline mb-3">
+                <input type="text" id="form3Example4" class="form-control form-control-lg"
+                  placeholder="Nombre" />
+                <label class="form-label" for="form3Example4" style="color: white;">Nombre</label>
+              </div>
+
+              <div class="form-outline mb-3">
+                <input type="text" id="form3Example4" class="form-control form-control-lg"
+                  placeholder="Nickname" />
+                <label class="form-label" for="form3Example4" style="color: white;">Nickname</label>
+              </div>
+
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                  <input type="email" id="form3Example3" class="form-control form-control-lg"
+                  placeholder="Email" />
+              <label class="form-label" for="form3Example3" style="color: white;">Email</label>
+            </div>
+  
+            <!-- Password input -->
+            <div class="form-outline mb-3">
+              <input type="password" id="form3Example4" class="form-control form-control-lg"
+                placeholder="Enter password" />
+              <label class="form-label" for="form3Example4" style="color: white;">Password</label>
+            </div>
+
+            <div class="form-outline mb-3">
+                <input type="text" id="form3Example4" class="form-control form-control-lg"
+                  placeholder="País de residencia" />
+                <label class="form-label" for="form3Example4" style="color: white;">País de residencia</label>
+              </div>
+
+            <div class="form-outline mb-3">
+                <input type="date" id="form3Example4" class="form-control form-control-lg"
+                  placeholder="Fecha de nacimiento" />
+                <label class="form-label" for="form3Example4" style="color: white;">Fecha de nacimiento</label>
+            </div>
+
+            <div class="form-outline mb-3">
+                <input type="text" id="form3Example4" class="form-control form-control-lg"
+                  placeholder="Telefono" />
+                <label class="form-label" for="form3Example4" style="color: white;">Teléfono</label>
+            </div>
+
+            <div class="text-center text-lg-start mt-4 pt-2">
+                <button type="button" class="btn btn-primary btn-lg"
+                  style="padding-left: 2.5rem; padding-right: 2.5rem;" style="color: white;">Regístrate</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+</section>
+
 {% endblock %}
