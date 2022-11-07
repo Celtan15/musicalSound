@@ -2,7 +2,7 @@
 {% load static %}
 {% block content %}
 
-<section class="vh-100" style="margin-top: 2rem; margin-bottom: 20rem;">
+<section class="vh-100" style="margin-top: 2rem; margin-bottom: 2rem;">
     <link href="{% static 'base_app/css/manage.css' %}" rel="stylesheet">
     <h1 style="color: white; text-align: center; margin-bottom: 2rem;">Regístrate</h1>
     <div class="container-fluid h-custom">
@@ -12,63 +12,16 @@
             class="img-fluid" alt="Sample image">
         </div>
         <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-            <form>
+            <form class="form" action="" method="POST">
+              {% csrf_token %}
               <!-- Cédula input -->
-              
-              <div class="form-outline mb-3">
-                <input type="text" id="form3Example4" class="form-control form-control-lg"
-                  placeholder="Cédula" />
-                <label class="form-label" for="form3Example4" style="color: white;">Cédula</label>
-              </div>
-
-              <div class="form-outline mb-3">
-                <input type="text" id="form3Example4" class="form-control form-control-lg"
-                  placeholder="Nombre" />
-                <label class="form-label" for="form3Example4" style="color: white;">Nombre</label>
-              </div>
-
-              <div class="form-outline mb-3">
-                <input type="text" id="form3Example4" class="form-control form-control-lg"
-                  placeholder="Nickname" />
-                <label class="form-label" for="form3Example4" style="color: white;">Nickname</label>
-              </div>
-
-              <!-- Email input -->
-              <div class="form-outline mb-4">
-                  <input type="email" id="form3Example3" class="form-control form-control-lg"
-                  placeholder="Email" />
-              <label class="form-label" for="form3Example3" style="color: white;">Email</label>
-            </div>
-  
-            <!-- Password input -->
-            <div class="form-outline mb-3">
-              <input type="password" id="form3Example4" class="form-control form-control-lg"
-                placeholder="Enter password" />
-              <label class="form-label" for="form3Example4" style="color: white;">Password</label>
-            </div>
-
-            <div class="form-outline mb-3">
-                <input type="text" id="form3Example4" class="form-control form-control-lg"
-                  placeholder="País de residencia" />
-                <label class="form-label" for="form3Example4" style="color: white;">País de residencia</label>
-              </div>
-
-            <div class="form-outline mb-3">
-                <input type="date" id="form3Example4" class="form-control form-control-lg"
-                  placeholder="Fecha de nacimiento" />
-                <label class="form-label" for="form3Example4" style="color: white;">Fecha de nacimiento</label>
-            </div>
-
-            <div class="form-outline mb-3">
-                <input type="text" id="form3Example4" class="form-control form-control-lg"
-                  placeholder="Telefono" />
-                <label class="form-label" for="form3Example4" style="color: white;">Teléfono</label>
-            </div>
-
-            <div class="text-center text-lg-start mt-4 pt-2">
-                <button type="button" class="btn btn-primary btn-lg"
+              <table style="color: white; margin: auto;">
+                {{form.as_table}}
+              </table>
+              <div class="text-center text-lg-start mt-4 pt-2">
+                <button type="submit" class="btn btn-primary btn-lg"
                   style="padding-left: 2.5rem; padding-right: 2.5rem;" style="color: white;">Regístrate</button>
-            </div>
+              </div>
           </form>
         </div>
       </div>

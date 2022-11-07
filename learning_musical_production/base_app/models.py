@@ -90,7 +90,7 @@ class Mastering_module(Modules):
 class User(models.Model):
     id=models.CharField(primary_key=True,max_length=50)
     name=models.CharField(max_length=50)
-    nickname=models.CharField(unique=True,max_length=50)
+    username=models.CharField(unique=True,max_length=50)
     email=models.EmailField()
     psdw=models.CharField("Password", max_length=16)
     country=models.CharField(max_length=30)
@@ -107,3 +107,8 @@ class User(models.Model):
 
     def __str__(self):
         return 'El usuario se llama %s , su nickname es %s , su correo es %s, reside en %s' %(self.name, self.nickname, self.email, self.country)
+
+class Login(models.Model):
+    email=models.EmailField()
+    pdw=models.CharField("Password", max_length=16)
+    user_logged=models.OneToOneField(User, on_delete=models.CASCADE)
