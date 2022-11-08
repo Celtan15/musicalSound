@@ -88,10 +88,10 @@ class Mastering_module(Modules):
 
 class CustomUserManager(UserManager):
     def create_user(self, username, email=None, psdw=None, **extra_fields):
-        return self._create_user(username, email, psdw, **extra_fields)
+        return self.create_user(username, email, psdw, **extra_fields)
 
     def create_superuser(self, username, email=None, psdw=None, **extra_fields):
-        return self._create_user(username, email, psdw, **extra_fields)
+        return self.create_user(username, email, psdw, **extra_fields)
 
 # La base de datos genera automáticamente el id, se puede sobreescribir de ser necesario, revisar si
 # se necesita sobreescribir para cada clase de este modelo
@@ -110,14 +110,14 @@ class User(AbstractBaseUser):
     interface=models.ForeignKey(Interface_module, null=True, blank=True, on_delete=models.CASCADE)
     mixture=models.ForeignKey(Mixture_module, null=True, blank=True, on_delete=models.CASCADE)
     mastering=models.ForeignKey(Mastering_module, null=True, blank=True, on_delete=models.CASCADE)
-    objects=CustomUserManager()
+    objects=UserManager()
 
     class Meta:
         verbose_name='user_interface_module'
         verbose_name_plural='users_interface'
 
     def __str__(self):
-        return 'El usuario se llama %s , su nickname es %s , su correo es %s, reside en %s' %(self.name, self.nickname, self.email, self.country)
+        return 'El usuario se llama %s , su nickname es %s , su correo es %s, reside en %s' %(self.name, self.username, self.email, self.country)
 '''
     def create_user(self, id, name, username, email, psdw, country, date_birth, phone, progression):
         self.id=id

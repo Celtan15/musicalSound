@@ -18,7 +18,7 @@ def test_superuser_creation():
         email='aaa@email.com',
         psdw='8080',
         is_superuser=True,
-    )
+    )  # type: ignore
 
     assert user.is_superuser == True
 
