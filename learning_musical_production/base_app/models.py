@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import AbstractBaseUser, UserManager
 
 class Micro_module(models.Model):
     name=models.CharField(max_length=40)
@@ -85,21 +86,31 @@ class Mastering_module(Modules):
     class Meta:
         verbose_name='mastering_module'
 
+class CustomUserManager(UserManager):
+    def create_user(self, username, email=None, psdw=None, **extra_fields):
+        return self._create_user(username, email, psdw, **extra_fields)
+
+    def create_superuser(self, username, email=None, psdw=None, **extra_fields):
+        return self._create_user(username, email, psdw, **extra_fields)
+
 # La base de datos genera automáticamente el id, se puede sobreescribir de ser necesario, revisar si
 # se necesita sobreescribir para cada clase de este modelo
-class User(models.Model):
+class User(AbstractBaseUser):
     id=models.CharField(primary_key=True,max_length=50)
     name=models.CharField(max_length=50)
     username=models.CharField(unique=True,max_length=50)
     email=models.EmailField()
     psdw=models.CharField("Password", max_length=16)
     country=models.CharField(max_length=30)
-    date_birth=models.DateField()
+    date_birth=models.DateField(null=True)
     phone=models.CharField(max_length=20, blank=True)
     progression=models.DecimalField(max_digits=5, decimal_places=2, blank=True, null=True)
+    is_staff=models.BooleanField(default=False)
+    is_superuser=models.BooleanField(default=False)
     interface=models.ForeignKey(Interface_module, null=True, blank=True, on_delete=models.CASCADE)
     mixture=models.ForeignKey(Mixture_module, null=True, blank=True, on_delete=models.CASCADE)
     mastering=models.ForeignKey(Mastering_module, null=True, blank=True, on_delete=models.CASCADE)
+    objects=CustomUserManager()
 
     class Meta:
         verbose_name='user_interface_module'
@@ -107,7 +118,17 @@ class User(models.Model):
 
     def __str__(self):
         return 'El usuario se llama %s , su nickname es %s , su correo es %s, reside en %s' %(self.name, self.nickname, self.email, self.country)
-
+'''
+    def create_user(self, id, name, username, email, psdw, country, date_birth, phone, progression):
+        self.id=id
+        self.name=name
+        self.username=username
+        self.email=email
+        self.country=country
+        self.date_birth=date_birth
+        self.phone=phone
+        self.progression=progression
+'''
 class Login(models.Model):
     email=models.EmailField()
     pdw=models.CharField("Password", max_length=16)
