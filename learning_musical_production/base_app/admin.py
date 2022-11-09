@@ -27,7 +27,7 @@ class Interface_module_admin(admin.ModelAdmin):
 
 class User_admin(admin.ModelAdmin):
     readonly_fields=('progression',)
-    search_fields=('id','name','nickname','country')
+    search_fields=('id','name','username','country')
 
 admin.site.register(User, User_admin)
 admin.site.register(Interface_module, Interface_module_admin)
