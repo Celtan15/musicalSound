@@ -1,0 +1,31 @@
+{% extends 'base_app/head_foot/base.html' %}
+{% load static %}
+{% block content %}
+
+<section class="vh-100" style="margin-top: 2rem; margin-bottom: 2rem;">
+    <link href="{% static 'base_app/css/manage.css' %}" rel="stylesheet">
+    <h1 style="color: white; text-align: center; margin-bottom: 2rem;">Regístrate</h1>
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          <img src="{% static 'base_app/img/img_random.jpg' %}"
+            class="img-fluid" alt="Sample image">
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+            <form class="form" action="" method="POST">
+              {% csrf_token %}
+              <!-- Cédula input -->
+              <table style="color: white; margin: auto;">
+                {{form.as_table}}
+              </table>
+              <div class="text-center text-lg-start mt-4 pt-2">
+                <button type="submit" class="btn btn-primary btn-lg"
+                  style="padding-left: 2.5rem; padding-right: 2.5rem;" style="color: white;">Regístrate</button>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+</section>
+
+{% endblock %}

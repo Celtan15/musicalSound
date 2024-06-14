@@ -1,0 +1,45 @@
+{% extends 'base_app/head_foot/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<!-- Heading -->
+<section class="page-section clearfix">
+  <h1 style="color: white; margin-left: 3rem; margin-right: 3rem; text-align: center; margin-bottom: 3rem;">Bienvenido a Musical sound, échale un vistazo a lo que puedes hacer aquí</h1>
+  <div class="container">
+    <div class="intro">
+      <!-- Imagen tomada de: https://www.freepik.es/foto-gratis/fondo-musica-telefono-icono-musica-columna-concepto-tecnologia-moderna-escuchando-musica_18869026.htm#query=descargar%20musica&position=2&from_view=keyword -->
+      <!-- La imagen de abajo es temporal, aquí irá el logo de la aplicación -->
+      <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'base_app/img/img_random.jpg' %}" alt="">
+      <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+        <h2 class="section-heading mb-4" >
+          <span class="section-heading-lower">Conocimiento garantizado:</span>
+          <span class="section-heading-upper">Nos aseguramos de buscar la información más relevante y actualizada</span>
+        </h2>
+        <p class="mb-3">Aprenda la producción musical de manera fácil, rápida y sencilla, con nuestra aplicación, no necesitas
+          conocimientos previos
+        </p>
+        
+      </div>
+    </div>
+  </div>
+</section>
+  
+<!-- Message -->
+<section class="page-section cta">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-9 mx-auto">
+        <div class="cta-inner text-center rounded">
+          <h2 class="section-heading mb-4">
+            <span class="section-heading-lower">Un breve recordatorio:</span>
+            <span class="section-heading-upper">Teoría musical</span>
+          </h2>
+          <p class="mb-0">No te olvides estudiar teoría musical, conseguirás un mejor resultado sonoro.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
