@@ -79,11 +79,11 @@ WSGI_APPLICATION = 'musical_production.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'musical_production',
+        'NAME': 'musical_sound',
         'USER':'postgres',
         'PASSWORD': '9090',
         'HOST': '127.0.0.1',
-        'PORT': '8080',
+        'PORT': '5432',
     }
 }
 

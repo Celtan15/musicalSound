@@ -59,17 +59,16 @@ p {
   font-size: 1rem;
   font-weight: 800;
   padding-bottom:.5rem;
+  margin-top: 2rem;
 
 }
 
 .section-heading .section-heading-lower {
-  display: block;
   font-size: 3rem;
   font-weight: 100;
 }
 
 .section-heading .section-heading-under {
-  display: block;
   font-size: 1rem;
   text-transform: none;
   font-weight: 300;
@@ -80,12 +79,12 @@ p {
 }
 
 #mainNav {
-  background-color: rgb(100, 149, 237);
+  background-color: rgba(115, 187, 209, 0.99);
   font-family: 'Raleway';
 }
 
 #mainNav .navbar-brand {
-  color: rgb(0, 0, 0);
+  color: rgb(207, 38, 38);
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -95,7 +94,6 @@ p {
 
 #mainNav .navbar-nav .nav-item.active .nav-link {
   color: rgb(0, 0, 0);
-  text-decoration: underline;
 }
 
 @media (min-width: 1200px) {
@@ -104,11 +102,9 @@ p {
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
     color: rgb(178, 34, 34);
-    text-decoration: underline;
   }
   #mainNav .navbar-nav .nav-item.active .nav-link:hover {
     color: #000000;
-    text-decoration: underline;
   }
 }
 
@@ -131,10 +127,10 @@ p {
     float: left;
   }
   .intro .intro-text {
-    left: 600;
+    left: 160px;
     width: 60%;
-    margin-top: 3rem;
-    background-color: rgb(100, 149, 237);
+    margin-top: 80px;
+    background-color: rgba(126, 174, 189, 0.99);
     color: rgb(0, 0, 0);
     position: absolute;
   }
@@ -161,7 +157,7 @@ p {
   position: relative;
   padding: 3rem;
   margin: 0.5rem;
-  background-color: rgb(100, 149, 237);
+  background-color: rgba(146, 219, 250, 0.99);
   color: rgb(0, 0, 0);
 }
 
@@ -226,7 +222,7 @@ p {
 }
 
 .footer {
-   background-color: rgb(100, 149, 237);
+   background-color: rgba(115, 187, 209, 0.99);
 }
 
 .btn {

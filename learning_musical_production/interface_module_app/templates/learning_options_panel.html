@@ -1,106 +1,241 @@
 {% extends 'base_app/head_foot/base.html' %}
-
 {% block content %}
-
-<h1 style="text-align: center; margin-top: 3rem; color: white">Aprendiendo el panel de opciones</h1>
-{% for panel in options_panel %}
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     {% load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.104.2">
-    <title>Learning FL Studio interface</title>
-    
+    <title>Learning musical production</title>
+
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
-    
-    <link href="{% static 'interface_module_app/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <link href="{% static 'base_app/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
         }
-      }
 
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
 
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
+        .left {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .right {
+            flex: 1;
+            margin-left: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
+        .right img {
+            float: left;
+            margin-left: 140px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .dialog-box {
+            border: 1px solid #0c0909;
+            margin-left: auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 200px;
+            background-color: rgba(91, 149, 166, 0.99);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius:10px;
+        }
+        .dialog-box h2 {
+            margin-top: 0;
+        }
 
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
     </style>
 
     <!-- Custom styles for this template -->
     <link href="{% static 'interface_module_app/css/manage.css' %}" rel="stylesheet">
-  </head>
-  <body>
+</head>
+<body>
 
 <main>
-    <!-- START THE FEATURETTES -->
-    <hr class="featurette-divider">
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">{{panel.name}}.<span class="text-muted"> Aprende el panel de opciones</span></h2>
-        <p class="lead">{{panel.content}}</p>
-      </div>
-      <div class="col-md-5">
-        <p><img src='{{panel.images.url}}' style="margin-top: 10rem;" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400" height="400" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"></p>
-      </div>
-    </div>
-    </div>
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <!-- /END THE FEATURETTES -->
+    <div class="container marketing">
+        <!-- Three columns of text below the carousel -->
+        <h1 style="color: white; margin-left: 3rem; margin-top: 3rem; margin-right: 3rem; text-align: center; margin-bottom: 3rem;">Aquí aprenderás el panel de opciones de FL Studio</h1>
+        <h2>Panel de opciones</h2>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <p>En esta sección encontrarás las opciones que permitirán crear, exportar nuevos proyectos,
+                        así como también agregar nuevos plugin y patrones necesarios para tus proyectos, entre muchas otras funciones
+                        que deseas realizar. A continuación explicaremos cada una de esas opciones </p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <h1>¡Hola!</h1>
+                        <p>En la esquina superior izquierda podrás encontrar el siguiente panel</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/options_panel/panel_opciones.gif" >
+            </div>
+        </div><!-- /.row -->
+        <h2>File (Archivo)</h2>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/micro_module/options_panel/opcion_abrir.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <p>Una de las primeras opciones que encontrarás es "Open" que te permitirá abrir un proyecto ya creado,
+                        que se encuentra en tu dispositivo, De esta misma manera con la opción "Save as", con la que puedes
+                        guardar tus proyectos</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Tus proyectos se guardarán con la extensión ".flp"</p>
+                    </div>
+                </div>
+            </div>
 
-  </div><!-- /.container -->
+            </div>
+        <div class="row">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <p>Una de las opciones importantes es importar que permite traer diferentes tipos de archivos como
+                     audio (mp3, WAV, entre otros), archivos MIDI. Con la opción exportar permite guardar y convertir tus
+                    proyectos en diferentes formatos.</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Puedes exportar tus proyectos en formatos como: WAV, MP3, OGG, MIDI, M4A.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/options_panel/opcion_exportar.gif" >
+            </div>
+        </div>
+        <h2>Add (Agregar)</h2>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/micro_module/options_panel/opcion_agregar.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <p>En esta opción podrás agregar nuevos plugins que necesites en tus proyectos, además de los que ya vienen por
+                    defecto. Se debe tener en cuenta que estos deben guardarse en la carpeta "plugins", que se crea al
+                    instalar FL Studio</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Podrás encontrar plugins en la sección Tips y Material de apoyo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2>Patterns (Patrones)</h2>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <p>Con esta opción podrás agregar patrones en los instrumentos musicales que requieras, con el fin
+                        de crear secuencias, acordes y ritmos. Aquí podrás encontrar patrones por defecto o también
+                        crear uno nuevo.</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Puedes crear tus propios patrones desde el piano roll.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/options_panel/opcion_patrones.gif" >
+            </div>
+        </div>
+
+        <h2>View (Ver)</h2>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/micro_module/options_panel/opcion_ver.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <p>Con la opción "VIEW" podrás visualizar las ventanas y elementos que se encuentran en FL Studio,
+                        además de tener la opción de cerrarlas. Podrás organizar las ventanas como lo prefieras y distribuirlas
+                        de mejor manera en la pantalla.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Options (Opciones)</h2>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4">
+                    <p>Permite configurar de manera personalizada tu entorno de trabajo, de manera general o de herramientas
+                        específicas, como el MIDI, audio, también configurar el proyecto, administrar los plugins.
+                    </p>
+                    <p>Esta opción te permite cambiar el idioma, el tema, la apariencia que prefieres para tu mejor
+                        visualización.</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Todas las configuraciones que desees realizar las encontrarás aquí.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/options_panel/opcion_opciones.gif" >
+            </div>
+        </div>
+
+        <h2>Tools (Herramientas)</h2>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/micro_module/options_panel/opcion_machine.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <p>En esta opción podrás encontrar herramientas y funciones útiles para la producción y edición de
+                    audio, como "Riff machine" que te permite generar nuevos patrones y ritmos de manera automática. "Macros"
+                    es una opción que puedes utilizar para limpiar tu proyecto de datos que no están siendo utilizados.</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Riff machine es una herramienta que sirve como inspiración para crear nuevos patrones</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4">
+                    <p>Con "Control creator",puedes personalizar los diseños de los controles MIDI virtuales como perillas, botones.
+                    </p>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/options_panel/opcion_creator.gif" >
+            </div>
+        </div>
+        </div><!-- /.row -->
+
+    </div><!-- /.container -->
 </main>
 
-    <script src="{% static 'interface_module_app/vendor/jquery/jquery.min.js' %}"></script>
-    <script src="{% static 'interface_module_app/static/interface_module_app/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-      
-  </body>
-</html>
+<script src="{% static 'base_app/vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'base_app/static/interface_module_app/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
-{% endfor %}
+</body>
+</html>
 
 {% endblock %}

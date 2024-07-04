@@ -10,40 +10,47 @@
      <!-- Fonts -->
      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
      <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
-     
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <!-- Styles -->
+
+  <!-- Styles -->
     <link href="{% static 'base_app/css/manage.css ' %}" rel="stylesheet">
 </head>
 
 <body>
  <!-- Navbar -->
- <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+ <nav class="navbar navbar-expand-lg navbar-dark py-lg-4 ml-auto" id="mainNav">
     <div class="container">
       <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="">Musical Sound</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav mx-auto">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item {% if request.path == '/' %}active{% endif %} px-lg-3">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Home' %}">Musical Sound</a>
           </li>
           </li>
           <li class="nav-item {% if request.path == '/who_we_are/' %}active{% endif %} px-lg-3">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'Who_we_are' %}">¿Quienes somos?</a>
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Who_we_are' %}">Interfaz</a>
           </li>
           <li class="nav-item {% if request.path == '/about/' %}active{% endif %} px-lg-3">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'About' %}">Acerca de</a>
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'About' %}">Mezcla</a>
           </li>
           <li class="nav-item {% if request.path == '/feedback/' %}active{% endif %} px-lg-3">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'Feedback' %}">Sugerencias</a>
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Feedback' %}">Masterización</a>
+          </li>
+          <li class="nav-item {% if request.path == '/feedback/' %}active{% endif %} px-lg-3">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Feedback' %}">Tips y Apoyo</a>
+          </li>
+          <li class="nav-item {% if request.path == '/feedback/' %}active{% endif %} px-lg-3">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Feedback' %}">Evaluaciones</a>
           </li>
           <li class="nav-item {% if request.path == '/sign_up/' %}active{% endif %}", style="margin-left: 18rem">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'Sign_up' %}">Sign up</a>
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Sign_up' %}"><i class="fas fa-user-plus"></i>Crear cuenta</a>
           </li>
           <li class="nav-item {% if request.path == '/login/' %}active{% endif %}", style="margin-left: 0.3rem">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'Login' %}">Login</a>
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Login' %}"><i class="fas fa-sign-in-alt"></i>Iniciar sesión</a>
           </li>
         </ul>
       </div>
