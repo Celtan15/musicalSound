@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1dce875d-1dd1-4008-9cf8-f076e06490e4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/proyectotesis.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_musical_production/base_app/static/base_app/css/manage.css" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/base_app/static/base_app/css/manage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_musical_production/base_app/templates/base_app/head_foot/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/base_app/templates/base_app/head_foot/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_musical_production/base_app/templates/base_app/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/base_app/templates/base_app/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_musical_production/interface_module_app/templates/learning_options_panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/interface_module_app/templates/learning_options_panel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_musical_production/interface_module_app/templates/learning_top_panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/interface_module_app/templates/learning_top_panel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_musical_production/musical_production/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/musical_production/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,63 +13,35 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="building_interface_module" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;SindyMarcelaCuatin&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Celtan15/musicalSound.git&quot;,
-    &quot;accountId&quot;: &quot;50163967-3bf9-4ad7-a24c-7ebf3d65e642&quot;
-  }
-}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 6
-}</component>
   <component name="ProjectId" id="2Gbe7qHEmgAhcNQ5kH2lMJkRsDx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/diego/OneDrive/Documentos/DjangoProjects/AprendizajeProduccionMusical/musicalProduction&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "paneles",
+    "last_opened_file_path": "C:/Users/diego/OneDrive/Documentos/DjangoProjects/AprendizajeProduccionMusical/musicalProduction",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\INGRID QUENAN\Documents\trabajo de grado\django\proyectotesis\learning_musical_production\media" />
-    </key>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
-      </set>
-    </attachedChunks>
-  </component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -92,25 +55,6 @@
       <workItem from="1666667226362" duration="653000" />
       <workItem from="1666815944803" duration="915000" />
       <workItem from="1667000794623" duration="91000" />
-      <workItem from="1718565731402" duration="4995000" />
-      <workItem from="1718820489639" duration="7560000" />
-      <workItem from="1718887629379" duration="16993000" />
-      <workItem from="1719250548019" duration="15039000" />
-      <workItem from="1719433885049" duration="841000" />
-      <workItem from="1719499748568" duration="643000" />
-      <workItem from="1719500411071" duration="47000" />
-      <workItem from="1719500504740" duration="2131000" />
-      <workItem from="1719505414771" duration="14426000" />
-      <workItem from="1719606156137" duration="2482000" />
-      <workItem from="1719856508843" duration="7518000" />
-      <workItem from="1719866543154" duration="3015000" />
-      <workItem from="1719871410132" duration="1638000" />
-      <workItem from="1720019869135" duration="3971000" />
-      <workItem from="1720025462969" duration="6204000" />
-      <workItem from="1720104479164" duration="3622000" />
-      <workItem from="1720108381270" duration="3178000" />
-      <workItem from="1720118642851" duration="10603000" />
-      <workItem from="1720130471357" duration="2906000" />
     </task>
     <servers />
   </component>
