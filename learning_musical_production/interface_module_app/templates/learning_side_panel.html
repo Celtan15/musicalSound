@@ -2,8 +2,6 @@
 
 {% block content %}
 
-<h1 style="text-align: center; margin-top: 3rem; color: white">Aprendiendo sobre el panel lateral de FL Studio 20</h1>
-{% for panel in side_panel %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -33,32 +31,6 @@
         }
       }
 
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
       .nav-scroller .nav {
         display: flex;
         flex-wrap: nowrap;
@@ -69,6 +41,41 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
+
+      .left {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .right {
+          flex: 1;
+          margin-left: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .right img {
+          float: left;
+          margin-left: 140px;
+          max-width: 100%;
+          height: auto;
+          border-radius: 8px;
+      }
+      .dialog-box {
+          border: 1px solid #0c0909;
+          margin-left: auto;
+          padding: 20px;
+          width: 80%;
+          max-width: 200px;
+          background-color: rgba(91, 149, 166, 0.99);
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+          border-radius:10px;
+      }
+      .dialog-box h2 {
+          margin-top: 0;
+      }
     </style>
 
     <!-- Custom styles for this template -->
@@ -78,21 +85,43 @@
 
 <main>
     <!-- START THE FEATURETTES -->
-    <hr class="featurette-divider">
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">{{panel.name}}.<span class="text-muted"> Aprende el panel lateral de FL Studio</span></h2>
-        <p class="lead">{{panel.content}}</p>
-      </div>
-      <div class="col-md-5">
-        <p><img src='{{panel.images.url}}' style="margin-top: 10rem;" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400" height="400" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"></p>
-      </div>
-    </div>
-    </div>
+    <div class="container marketing">
+        <h1 style="color: white; margin-left: 3rem; margin-top: 3rem; margin-right: 3rem; text-align: center; margin-bottom: 3rem;">Aprende el panel lateral de FL Studio</h1>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <p> En el panel lateral de FL Studio se encuentra el Browser o explorador, en donde podrás navegar a través de los
+                        diferentes archivos, carpetas o plugins que ofrece FL Studio
+                    </p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <h1>¡Hola!</h1>
+                        <p>En la parte lateral de FL Studio encontrarás el siguiente panel.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/side_panel/panel_lateral.gif" >
+            </div>
+        </div><!-- /.row -->
 
-    <!-- /END THE FEATURETTES -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/micro_module/side_panel/opcion_combo.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <p>En la primera parte encontrarás el "Browser option" con el que puedes ocultar o mostrar carpetas, puedes
+                        acceder al historial de navegación, puedes encontrar diferentes vistas que te resultarán útiles, como una
+                        "vista previa de la muestra completa", "mostrar iconos y texto en pestañas"
+                    </p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Con la opción de "Collapse structure", puedes revertir la estructura de las carpetas.</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.row -->
 
-  </div><!-- /.container -->
+    </div><!-- /.container -->
 </main>
 
     <script src="{% static 'interface_module_app/vendor/jquery/jquery.min.js' %}"></script>
@@ -100,7 +129,5 @@
       
   </body>
 </html>
-
-{% endfor %}
 
 {% endblock %}
