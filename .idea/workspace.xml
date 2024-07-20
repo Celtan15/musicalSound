@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1dce875d-1dd1-4008-9cf8-f076e06490e4" name="Changes" comment="Se realizó cambios en el módulo interfaz, se llenó información en el panel de opciones y en el panel superior, también se ajustaron cambios en la pagina principal">
+    <list default="true" id="1dce875d-1dd1-4008-9cf8-f076e06490e4" name="Changes" comment="Se agregó contenido al módulo de interfaz en el panel lateral">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_musical_production/interface_module_app/templates/learning_side_panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/interface_module_app/templates/learning_side_panel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_musical_production/media/image.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_musical_production/media/imagen.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,46 +20,46 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "SindyMarcelaCuatin"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SindyMarcelaCuatin&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Celtan15/musicalSound.git",
-    "accountId": "50163967-3bf9-4ad7-a24c-7ebf3d65e642"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Celtan15/musicalSound.git&quot;,
+    &quot;accountId&quot;: &quot;50163967-3bf9-4ad7-a24c-7ebf3d65e642&quot;
   }
-}]]></component>
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2Gbe7qHEmgAhcNQ5kH2lMJkRsDx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "paneles",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/diego/OneDrive/Documentos/DjangoProjects/AprendizajeProduccionMusical/musicalProduction",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;paneles&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/diego/OneDrive/Documentos/DjangoProjects/AprendizajeProduccionMusical/musicalProduction&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -84,7 +81,9 @@
       <workItem from="1666667226362" duration="653000" />
       <workItem from="1666815944803" duration="915000" />
       <workItem from="1667000794623" duration="91000" />
-      <workItem from="1721425625940" duration="4012000" />
+      <workItem from="1721425625940" duration="5904000" />
+      <workItem from="1721488679426" duration="562000" />
+      <workItem from="1721505543254" duration="312000" />
     </task>
     <task id="LOCAL-00001" summary="Se realizó cambios en el módulo interfaz, se llenó información en el panel de opciones y en el panel superior, también se ajustaron cambios en la pagina principal">
       <option name="closed" value="true" />
@@ -94,7 +93,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720142891273</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Se agregó contenido al módulo de interfaz en el panel lateral">
+      <option name="closed" value="true" />
+      <created>1721431389939</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721431389939</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +120,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Se realizó cambios en el módulo interfaz, se llenó información en el panel de opciones y en el panel superior, también se ajustaron cambios en la pagina principal" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se realizó cambios en el módulo interfaz, se llenó información en el panel de opciones y en el panel superior, también se ajustaron cambios en la pagina principal" />
+    <MESSAGE value="Se agregó contenido al módulo de interfaz en el panel lateral" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se agregó contenido al módulo de interfaz en el panel lateral" />
   </component>
 </project>
