@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1dce875d-1dd1-4008-9cf8-f076e06490e4" name="Changes" comment="Se agregó contenido al módulo de interfaz en el panel lateral">
+    <list default="true" id="1dce875d-1dd1-4008-9cf8-f076e06490e4" name="Changes" comment="Se agregó contenido al modulo interfaz en el panel workstation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_musical_production/interface_module_app/templates/learning_side_panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/interface_module_app/templates/learning_side_panel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_musical_production/interface_module_app/templates/learning_workstation.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/interface_module_app/templates/learning_workstation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/base_app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/base_app/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/base_app/templates/base_app/head_foot/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/base_app/templates/base_app/head_foot/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/base_app/templates/base_app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/base_app/templates/base_app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/base_app/templates/base_app/sign_up.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/base_app/templates/base_app/sign_up.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/base_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/base_app/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +90,12 @@
       <workItem from="1721488679426" duration="562000" />
       <workItem from="1721505543254" duration="1482000" />
       <workItem from="1722443210669" duration="22006000" />
-      <workItem from="1722544337535" duration="9007000" />
+      <workItem from="1722544337535" duration="9237000" />
+      <workItem from="1722634672101" duration="5622000" />
+      <workItem from="1722889378469" duration="6095000" />
+      <workItem from="1722971818345" duration="13562000" />
+      <workItem from="1723061080825" duration="4281000" />
+      <workItem from="1723068048012" duration="1368000" />
     </task>
     <task id="LOCAL-00001" summary="Se realizó cambios en el módulo interfaz, se llenó información en el panel de opciones y en el panel superior, también se ajustaron cambios en la pagina principal">
       <option name="closed" value="true" />
@@ -113,11 +121,22 @@
       <option name="project" value="LOCAL" />
       <updated>1721506247538</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Se agregó contenido al modulo interfaz en el panel workstation">
+      <option name="closed" value="true" />
+      <created>1722555526405</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722555526405</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.py" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -133,6 +152,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Se realizó cambios en el módulo interfaz, se llenó información en el panel de opciones y en el panel superior, también se ajustaron cambios en la pagina principal" />
     <MESSAGE value="Se agregó contenido al módulo de interfaz en el panel lateral" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se agregó contenido al módulo de interfaz en el panel lateral" />
+    <MESSAGE value="Se agregó contenido al modulo interfaz en el panel workstation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se agregó contenido al modulo interfaz en el panel workstation" />
   </component>
 </project>

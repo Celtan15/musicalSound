@@ -12,17 +12,18 @@
             class="img-fluid" alt="Sample image">
         </div>
         <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-            <form class="form" action="" method="POST">
-              {% csrf_token %}
-              <!-- Cédula input -->
-              <table style="color: white; margin: auto;">
-                {{form.as_table}}
-              </table>
-              <div class="text-center text-lg-start mt-4 pt-2">
-                <button type="submit" class="btn btn-primary btn-lg"
-                  style="padding-left: 2.5rem; padding-right: 2.5rem;" style="color: white;">Regístrate</button>
-              </div>
-          </form>
+            <form class="form-control" method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary btn-lg">Registrarse</button>
+            </form>
+            {% if messages %}
+            <ul>
+                {% for message in messages %}
+                <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
         </div>
       </div>
     </div>
