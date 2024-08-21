@@ -27,24 +27,32 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+          {% if user.is_authenticated %}
           <li class="nav-item {% if request.path == '/' %}active{% endif %} px-lg-3">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'Home' %}">Musical Sound</a>
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Index' %}">Musical Sound</a>
           </li>
           </li>
           <li class="nav-item {% if request.path == '/who_we_are/' %}active{% endif %} px-lg-3">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'Who_we_are' %}">Interfaz</a>
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Learning_interface' %}">Interfaz</a>
           </li>
           <li class="nav-item {% if request.path == '/about/' %}active{% endif %} px-lg-3">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'About' %}">Mezcla</a>
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Learning_mixture' %}">Mezcla</a>
           </li>
           <li class="nav-item {% if request.path == '/feedback/' %}active{% endif %} px-lg-3">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'Feedback' %}">Masterización</a>
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Learning_mastering' %}">Masterización</a>
           </li>
           <li class="nav-item {% if request.path == '/feedback/' %}active{% endif %} px-lg-3">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'Feedback' %}">Tips y Apoyo</a>
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Tips' %}">Tips y Apoyo</a>
           </li>
           <li class="nav-item {% if request.path == '/feedback/' %}active{% endif %} px-lg-3">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'Feedback' %}">Evaluaciones</a>
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Evaluations' %}">Evaluaciones</a>
+          </li>
+          <li class="nav-item {% if request.path == '/login/' %}active{% endif %}", style="margin-left: 0.3rem">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Home' %}"><i class="bi bi-box-arrow-left"></i>Cerrar sesión</a>
+          </li>
+          {% else %}
+          <li class="nav-item {% if request.path == '/' %}active{% endif %} px-lg-3">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Home' %}">Musical Sound</a>
           </li>
           <li class="nav-item {% if request.path == '/sign_up/' %}active{% endif %}", style="margin-left: 18rem">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Sign_up' %}"><i class="fas fa-user-plus"></i>Crear cuenta</a>
@@ -52,6 +60,7 @@
           <li class="nav-item {% if request.path == '/login/' %}active{% endif %}", style="margin-left: 0.3rem">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Login' %}"><i class="fas fa-sign-in-alt"></i>Iniciar sesión</a>
           </li>
+          {% endif %}
         </ul>
       </div>
     </div>
