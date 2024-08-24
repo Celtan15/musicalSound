@@ -8,7 +8,7 @@ from django.contrib.auth.views import LoginView, LogoutView
 urlpatterns = [
     path('', views.home, name='Home'),
     path('login/', auth_views.LoginView.as_view(template_name='registration/login.html'), name='Login'),
-    path('logout/', auth_views.LogoutView.as_view(next_page='/'), name='logout'),
+    path('logout/', auth_views.LogoutView.as_view(next_page='/'), name='Logout'),
     path('sign_up/', views.sign_up, name='Sign_up'),
     path('index/', views.index, name='Index'),
     path('learning_mixture/', views.learning_mixture, name='Learning_mixture'),
