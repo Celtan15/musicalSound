@@ -3,6 +3,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django_countries.fields import CountryField
 from django_countries.widgets import CountrySelectWidget
 from django.contrib.auth.models import User
+from .models import Pregunta, ElegirRespuesta, RespuestaUsuario
 
 '''
 class Login_form(forms.Form):
@@ -52,3 +53,19 @@ class Sign_up_form(UserCreationForm):
         model = User
         fields = ['name', 'username', 'email', 'country', 'date_birth', 'phone', 'password1', 'password2']
         help_texts = {k: '' for k in fields}
+
+class ElegirInlineFormset(forms.BaseInlineFormSet):
+    def clean(self):
+        super(ElegirInlineFormset, self).clean()
+        res_correcta = 0
+        for formulario in self.forms:
+            if not formulario.is_valid():
+                return
+
+            if formulario.cleaned_data and formulario.cleaned_data.get('correcta') is True:
+                res_correcta += 1
+
+        try:
+            assert res_correcta == Pregunta.NUM_RES_PERMITIDAS
+        except AssertionError:
+            raise forms.ValidationError('Ingrese solo una respuesta')

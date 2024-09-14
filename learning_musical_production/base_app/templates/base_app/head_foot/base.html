@@ -21,10 +21,6 @@
  <!-- Navbar -->
  <nav class="navbar navbar-expand-lg navbar-dark py-lg-4 ml-auto" id="mainNav">
     <div class="container">
-      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="">Musical Sound</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           {% if user.is_authenticated %}
@@ -47,6 +43,7 @@
           <li class="nav-item {% if request.path == '/feedback/' %}active{% endif %} px-lg-3">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Evaluations' %}">Evaluaciones</a>
           </li>
+          <span class="navbar-text ml-2">{{ user.username}}</span>
           <form id="logout-form" method="POST" action="{% url 'Logout' %}">
             {% csrf_token %}
             <button type="submit" class="btn btn-link nav-link text-uppercase text-expanded" style="border: none; background: none; color: #0c0909;margin-left: 2rem">

@@ -1,5 +1,7 @@
 from django.contrib import admin
-from .models import Interface_module, Mixture_module, Mastering_module, Interface_evaluation, Mixture_evaluation, Mastering_evaluation, User, Top_panel, Options_panel, Side_panel, Workstation
+import nested_admin
+from .models import Interface_module,Mixture_module, Mastering_module, Interface_evaluation, Mixture_evaluation, Mastering_evaluation, User, Top_panel, Options_panel, Side_panel, Workstation, Pregunta, ElegirRespuesta, RespuestaUsuario, Evaluations
+from .forms import ElegirInlineFormset
 
 class Top_panel_admin(admin.ModelAdmin):
     search_fields=('name','content', 'status')
@@ -17,9 +19,30 @@ class Workstation_admin(admin.ModelAdmin):
     search_fields=('name','content', 'status')
     readonly_fields=('progression',)
 
-class Interface_evaluation_admin(admin.ModelAdmin):
+class ElegirRespuestaInline(nested_admin.NestedTabularInline):
+    model=ElegirRespuesta
+    can_delete=False
+    extra=4
+    max_num=ElegirRespuesta.MAXIMO_RESPUESTA
+    min_num=ElegirRespuesta.MAXIMO_RESPUESTA
+    formset=ElegirInlineFormset
+
+class PreguntaInline(nested_admin.NestedStackedInline):
+    model = Pregunta
+    extra = 1
+    inlines = [ElegirRespuestaInline]
+    list_display=['texto', ]
+    search_fields=['texto', 'preguntas__texto']
+
+class RespuestaUsuarioAdmin(admin.ModelAdmin):
+    list_display = ['fecha_respuesta', 'pregunta', 'respuesta', 'correcta', 'resultado']
+
+    class Meta:
+        model=RespuestaUsuario
+
+class Interface_evaluation_admin(nested_admin.NestedModelAdmin):
     #list_display=('name', 'qualification', 'number_attempts', 'quantity_microModules')
-    search_fields=('id','number_attempts','qualification')
+    inlines = [PreguntaInline]
 
 class Interface_module_admin(admin.ModelAdmin):
     list_display=('name', 'status', 'progression', 'quantity_microModules')
@@ -28,6 +51,8 @@ class Interface_module_admin(admin.ModelAdmin):
 class User_admin(admin.ModelAdmin):
     readonly_fields=('progression',)
     search_fields=('id','name','username','country')
+
+
 
 admin.site.register(User, User_admin)
 admin.site.register(Interface_module, Interface_module_admin)
@@ -40,4 +65,5 @@ admin.site.register(Mastering_module)
 admin.site.register(Interface_evaluation, Interface_evaluation_admin)
 admin.site.register(Mixture_evaluation)
 admin.site.register(Mastering_evaluation)
+
 # Register your models here.

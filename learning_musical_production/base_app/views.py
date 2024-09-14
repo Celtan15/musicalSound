@@ -1,10 +1,11 @@
 from cmath import log
 from email import message
-from django.shortcuts import redirect, render
+from django.shortcuts import redirect, render, get_object_or_404
 from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout,authenticate, login
 from base_app.models import Login
+from .models import Evaluations
 from base_app.forms import Sign_up_form
 from django.contrib import messages
 from django.contrib.auth.forms import AuthenticationForm
@@ -68,10 +69,46 @@ def tips(request):
     return render(request, 'base_app/tips.html/')
     
 def evaluations(request):
-    return render(request, 'base_app/evaluations.html/')
+
+    EvaluacionUser, created = Evaluations.objects.get_or_create(usuario=request.user)
+
+    if request.method == 'POST':
+        pregunta_pk = request.POST.get('pregunta_pk')
+        preg_respondida = EvaluacionUser.intentos.select_related('pregunta').get(pregunta__pk=pregunta_pk)
+        respuesta_pk = request.POST.get('respuesta_pk')
+
+        try:
+            opcion_seleccionada = preg_respondida.pregunta.opciones.get(pk = respuesta_pk)
+        except ObjectDoesNotExist:
+            raise Http404
+
+        EvaluacionUser.validar_intento(preg_respondida, opcion_seleccionada)
+
+        return redirect ('Evaluations_answers', preg_respondida.pk)
+
+    else:
+        pregunta = EvaluacionUser.nuevas_preguntas()
+        if pregunta is not None:
+            EvaluacionUser.nuevos_intentos(pregunta)
+
+        context = {
+            'pregunta':pregunta
+        }
+    return render(request, 'base_app/evaluations_questions.html/', context)
+
+def resultado_pregunta(request, preg_respondida_pk):
+    respondida = get_object_or_404(RespuestaUsuario, pk=preg_respondida_pk)
+
+    context = {
+        'respondida':respondida
+    }
+    return render(request, 'base_app/evaluations_answers.html', context)
 
 def who_we_are(request):
     return render(request, 'base_app/who_we_are.html/')
+
+def module_evaluations(request):
+    return render(request, 'base_app/evaluations.html/')
 
 def about(request):
     return render(request, 'base_app/about.html/')
