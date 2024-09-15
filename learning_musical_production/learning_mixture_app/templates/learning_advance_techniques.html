@@ -1,0 +1,207 @@
+{% extends 'base_app/head_foot/base.html' %}
+
+{% block content %}
+
+<!doctype html>
+
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Learning FL Studio interface</title>
+    
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+    
+    <link href="{% static 'learning_mixture_app/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <style>
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .left {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .right {
+          flex: 1;
+          margin-left: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .right img {
+          float: left;
+          margin-left: 140px;
+          max-width: 100%;
+          height: auto;
+          border-radius: 8px;
+      }
+      .dialog-box {
+          border: 1px solid #0c0909;
+          margin-left: auto;
+          padding: 20px;
+          width: 80%;
+          max-width: 200px;
+          background-color: rgba(91, 149, 166, 0.99);
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+          border-radius:10px;
+      }
+      .dialog-box h2 {
+          margin-top: 0;
+      }
+
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'learning_mixture_app/css/manage.css' %}" rel="stylesheet">
+  </head>
+  <body>
+
+<main>
+
+    <!-- START THE FEATURETTES -->
+    <div class="container marketing">
+        <h1 style="color: white; margin-left: 3rem; margin-top: 3rem; margin-right: 3rem; text-align: center; margin-bottom: 3rem;">Aprende sobre algunas técnicas que utilizan los expertos para mejorar su sonido</h1>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <p> En el área de trabajo puedes puedes crear y desarrollar la producción de tu proyecto, en esta área
+                        puedes encontrar varias ventanas de trabajo como piano roll, master, playlist, channel rack. A continuación
+                        encuentras cada ventana y sus herramientas.
+                    </p>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/workstation/workspace.gif" >
+            </div>
+        </div><!-- /.row -->
+
+        <h1> Playlist </h1>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/micro_module/workstation/playlist.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <p>En la ventana "Playlist", puedes crear tus patrones y audios que desees, permitiendo crear el flujo de tus
+                        proyectos.
+                    </p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <h1>¡Hola!</h1>
+                        <p>Con la opción de "Collapse structure", puedes revertir la estructura de las carpetas.</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.row -->
+
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <p> En el área de trabajo puedes puedes crear y desarrollar la producción de tu proyecto, en esta área
+                        puedes encontrar varias ventanas de trabajo como piano roll, master, playlist, channel rack. A continuación
+                        encuentras cada ventana y sus herramientas. </p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Puedes cambiar a cada patrón el color de tu preferencia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/workstation/playlist_opcion.gif">
+            </div>
+        </div><!-- /.row -->
+
+        <h1>Piano Roll</h1>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/micro_module/workstation/pianoroll.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <p>En esta herramienta puedes componer patrones, melodías. En esta ventana encuentras las teclas de un piano,
+                        y un área donde puedes crear, mover, cortar las notas, por medio de herramientas como un pincel que permite
+                        dibujarlas, lápiz, borrador, además de opciones como zoom, selección.</p>
+                </div>
+            </div>
+        </div><!-- /.row -->
+
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <p>En la parte superior puedes encontrar un menú desplegable con el que puedes ajustar las notas que creaste,
+                        de tal manera que se ajusten a tu gusto, como "Note pan" con el que seleccionas si quieres que tu nota se
+                        escuche a la izquierda o derecha, también esta "Note velocity" con el que configuras la velocidad de cada nota, con "Channel volume" ajustas
+                        automáticamente el volumen.</p>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/workstation/opcion_piano.gif" >
+            </div>
+        </div><!-- /.row -->
+
+        <h1>Channel rack</h1>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/micro_module/workstation/channel_rack.gif">
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <p> El channel rack es una herramienta muy importante que permite la organización de los patrones de cada
+                        instrumento y su gestión, en esta ventana encontrarás canales para asignar al instrumento que deseas trabajar,
+                        un secuenciador que permite crear los patrones, cada paso de este representa un sonido, creando así el
+                        patrón de tu preferencia, además encuentrás botones como "mute" para activar o desactivar un canal.</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Además de personalizar el color y el icono de cada canal, puedes agregar un instrumento con la opción
+                            "insert".</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.row -->
+
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <p>En cada canal puedes configurar tu instrumento, en la parte superior encuentras un número que deberás
+                        asignar a cada canal en el master, así como los botones de volumen, pan, mute y pitch con el que puedes
+                        ajustar la afinación de tonos, en esta ventana encuentras "Reverse" con el cual puedes alterar el sonido, "Swap stereo"
+                        que intercambia los canales de izquierda a derecha y viceversa, "Normalize" con el que puedes ajustar
+                        automáticamente el volumen del sonido.</p>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/workstation/opcion_channel.gif" >
+            </div>
+        </div><!-- /.row -->
+
+
+    </div><!-- /.container -->
+
+</main>
+
+    <script src="{% static 'learning_mixture_app/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+      
+  </body>
+</html>
+
+{% endblock %}

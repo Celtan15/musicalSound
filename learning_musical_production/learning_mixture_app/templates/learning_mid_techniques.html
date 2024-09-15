@@ -1,0 +1,202 @@
+{% extends 'base_app/head_foot/base.html' %}
+
+{% block content %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Learning FL Studio interface</title>
+    
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+    
+    <link href="{% static 'learning_mixture_app/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+
+      .left {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .right {
+          flex: 1;
+          margin-left: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .right img {
+          float: left;
+          margin-left: 140px;
+          max-width: 100%;
+          height: auto;
+          border-radius: 8px;
+      }
+      .dialog-box {
+          border: 1px solid #0c0909;
+          margin-left: auto;
+          padding: 20px;
+          width: 80%;
+          max-width: 200px;
+          background-color: rgba(91, 149, 166, 0.99);
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+          border-radius:10px;
+      }
+      .dialog-box h2 {
+          margin-top: 0;
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'learning_mixture_app/css/manage.css' %}" rel="stylesheet">
+  </head>
+<body>
+
+<main>
+    <div class="container marketing">
+        <h1 style="color: white; margin-left: 3rem; margin-top: 3rem; margin-right: 3rem; text-align: center; margin-bottom: 3rem;">Aprende técnicas de nivel intermedio para tus mezclas</h1>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <p>En esta sección encontrarás herramientas de acceso rápido que contienen funcionalidades
+                        para la producción musical, como botones para edición, visualización, y accesos directos  a ventanas
+                        principales.
+                        </p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <h1>¡Hola!</h1>
+                        <p>En la parte superior de la interfaz de FL Studio encontrarás este panel.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/top_panel/panel_superior.gif" >
+            </div>
+        </div><!-- /.row -->
+
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/micro_module/top_panel/opcion_pat.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <p>En la primera parte de este panel encontrarás las opciones "PAT", con la que podrás escuchar solo un patrón
+                        seleccionado, mientras que con la opción "SONG", puedes escuchar la canción completa. También encuentras
+                        el "Tempo", el cual puedes ajustarlo a tu preferencia.
+                    </p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>En este panel encuentras las opciones "Play", "Stop", "Record", con la que puedes
+                            iniciar y pausar el proyecto.</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.row -->
+
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <p>Podrás encontrar un botón que permite activar y descativar el "Metrónomo", el cual produce un sonido
+                        repetitivo, que ayuda a mantener el tiempo y a sincronizar el proyecto.
+                    </p>
+                    <p>Al lado derecho puedes encontrar el boton con el que puedes iniciar una cuenta regresiva para crear
+                    una grabación.</p>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/top_panel/opcion_metronomo.gif" >
+            </div>
+        </div><!-- /.row -->
+
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/micro_module/top_panel/opcion_tiempo.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <p>Ahora encontraremos "Song position", que nos indica la posición actual del proyecto cuando está en modo
+                        "Song". También encontramos un cajón con opciones, en donde podrás cambiar el patrón que deseas escuchar
+                        de manera más rápida.
+                    </p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Con la opción "Song position" los productores pueden controlar el tiempo de reproducción de su proyecto</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.row -->
+
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <p>En esta parte del panel podrás encontrar atajos para visualizar las ventanas en el área de trabajo,
+                    cada opción te muestra una ventana diferente. En primer lugar puedes encontrar "Playlist", te muestra los
+                    patrones que has añadido a tu proyecto. Encuentras también la ventana de"Piano roll", te muestra un
+                        teclado de piano, aquí puedes identificar y editar tus notas.</p>
+                    <p>Una de las ventanas que encontrarás es "Channel rack", en donde gestionas los canales de tu proyecto. Así
+                        como "Mixer", para ajustar los niveles de volumen, en esta ventana visualizas los diferentes canales de una
+                        pista de audio. </p>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/top_panel/opcion_atajov.gif" >
+            </div>
+        </div><!-- /.row -->
+
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/micro_module/top_panel/opcion_deshacer.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <p>Con la opción "undo" podrás deshacer acciones que hayas realizado en el proyecto, lo que te permite volver
+                        a un punto en específico que necesites.
+                    </p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>En el panel de la izquierda en la opción "History" se muestra una lista de cada cambio realizado </p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.row -->
+
+    </div><!-- /.container -->
+</main>
+
+    <script src="{% static 'learning_mixture_app/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  </body>
+</html>
+
+
+
+{% endblock %}

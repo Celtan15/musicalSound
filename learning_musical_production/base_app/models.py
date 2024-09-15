@@ -28,6 +28,18 @@ class Side_panel(Micro_module):
 class Workstation(Micro_module):
     images=models.ImageField(upload_to='micro_module/workstation')
 
+class Concepts(Micro_module):
+    images=models.ImageField(upload_to='micro_module/concepts')
+
+class Basic_techniques(Micro_module):
+    images=models.ImageField(upload_to='micro_module/basic_techniques')
+
+class Mid_techniques(Micro_module):
+    images=models.ImageField(upload_to='micro_module/mid_techniques')
+
+class Advance_techniques(Micro_module):
+    images=models.ImageField(upload_to='micro_module/advance_techniques')
+
 class Evaluations (models.Model):
     name=models.CharField(max_length=50)
     answer=models.CharField(max_length=5, blank=True)

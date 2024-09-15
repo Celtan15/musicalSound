@@ -18,20 +18,20 @@ def test(request):
 '''
 
 def learning_interface(request):
-    return render(request, 'learning_interface.html')
+    return render(request, 'learning_mixture.html')
 
 def learning_options_panel(request):
     options_panel=Options_panel.objects.all()
-    return render(request, 'learning_options_panel.html', {'options_panel': options_panel})
+    return render(request, 'learning_concepts.html', {'options_panel': options_panel})
 
 def learning_side_panel(request):
     side_panel=Side_panel.objects.all()
-    return render(request, 'learning_side_panel.html', {'side_panel': side_panel})
+    return render(request, 'learning_basic_techniques.html', {'side_panel': side_panel})
    
 def learning_top_panel(request):
     top_panel=Top_panel.objects.all()
-    return render(request, 'learning_top_panel.html', {'top_panel': top_panel})
+    return render(request, 'learning_mixture.html', {'top_panel': top_panel})
 
 def learning_workstation(request):
     workstation=Workstation.objects.all()
-    return render(request, 'learning_workstation.html', {'workstation': workstation})
+    return render(request, 'learning_advance_techniques.html', {'workstation': workstation})
