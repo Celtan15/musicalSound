@@ -1,0 +1,470 @@
+{% extends 'base_app/head_foot/base.html' %}
+{% block content %}
+<!doctype html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Learning musical production</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+
+    <link href="{% static 'learning_mixture_app/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <style>
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .left {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .right {
+            flex: 1;
+            margin-left: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right img {
+            float: left;
+            margin-left: 140px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .dialog-box {
+            border: 1px solid #0c0909;
+            margin-left: auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 200px;
+            background-color: rgba(91, 149, 166, 0.99);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius:10px;
+        }
+        .dialog-box h2 {
+            margin-top: 0;
+        }
+
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'learning_mixture_app/css/manage.css' %}" rel="stylesheet">
+</head>
+<body>
+
+<main>
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+        <!-- Three columns of text below the carousel -->
+        <h1 style="color: white; margin-left: 3rem; margin-top: 3rem; margin-right: 3rem; text-align: center; margin-bottom: 3rem;">La producción musical tiene varios tipos de efectos, vamos a ver algunos</h1>
+        <h2>Dinámicos</h2>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>El limitador</h4>
+                    <p>Este es un efecto cuyo propósito es el de poner un límite de decibeles a la mezcla,
+                        este lo hace de una manera agresiva y sin importar la distorsión que pueda generar
+                        al recortar los picos de sonido más altos </p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <h1>¡Hola!</h1>
+                        <p>El limitador se utiliza en casos muy puntuales para lograr un efecto llamado clipping,
+                            más adelante veremos este</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/options_panel/panel_opciones.gif" >
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/micro_module/options_panel/opcion_agregar.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>El compresor</h4>
+                    <p>El compresor es un efecto cuyo propósito es el de disminuir picos de sonido ruidosos
+                        y molestos para el oído, generando una estabilidad en el sonido, a diferencia
+                        del limitador este lo hace de manera suave, sin embargo, puede cumplir la función del
+                        mismo si se exageran los parámetros</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>El compresor es una herramienta indispensable en el kit de cualquier productor </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2>Espectrales</h2>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>El ecualizador</h4>
+                    <p>Este plugin es indispensable, permite modificar las frecuencias de un sonido para resaltar
+                    aquellas que más nos interesan de un sonido o reducir y quitar aquellos que solo ensucian el sonido</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>FL tiene algunos otros plugins de efectos que están basado en generar filtros
+                            a través de la ecualización, existen otros más que no se verán ya que no vienen de
+                            manera nativa en FL Studio</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/options_panel/panel_opciones.gif" >
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/micro_module/options_panel/opcion_agregar.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>Panning o paneo</h4>
+                    <p>El paneo es un efecto que permite modificar el equilibrio estéreo de cualquier sonido,
+                    permitiendo inclinarlo más hacia la izquierda o derecha</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>El paneo es supremamente importante, permite generar espacio en la mezcla, un concepto
+                        que es crucial si quieres tener un buen sonido</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2>Modulación</h2>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>Chorus</h4>
+                    <p>Este es un efecto único que permite multiplicar el sonido pero modificando tonos
+                    o añadiendo armónicos que generan una sensación de múltiples voces sonando a la vez
+                    de manera sonora y agradable</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Por voces nos podemos referir al sonido de cada instrumento, a su vez la voz por ejemplo
+                            también se considera un instrumento</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/options_panel/panel_opciones.gif" >
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/micro_module/options_panel/opcion_agregar.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>Flanger</h4>
+                    <p>Este efecto es muy particular, genera una especie de sonido de silbido y torbellino,
+                    también puede generar un sonido como si estuviese bajo el agua dependiendo su configuración</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Este efecto es muy característico de la música electrónica, pero es no implica que solo
+                        se limite a este género musical, ¡Ponte creativo y sácale el máximo provecho!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>Phaser</h4>
+                    <p>Este efecto permite crear un efecto tipo ola, amplificando algunas ondas y reduciendo otras</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Este efecto es un poco difícil de explicar, la mejor manera de conocer su característico
+                        sonido es cargandolo en el FL, te animo a que abras tu DAW y lo pruebes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/options_panel/panel_opciones.gif" >
+            </div>
+        </div><!-- /.row -->
+        <h2>Tonales o de frecuencia</h2>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>Pitch shifter</h4>
+                    <p>Este es un efecto que permite subir y bajar el tono de un sonido, generando efectos únicos</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Dominar este efecto y ser creativo será la clave para lograr un sonido de otro mundo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/options_panel/panel_opciones.gif" >
+            </div>
+        </div><!-- /.row -->
+        <h2>De tiempo y espacio</h2>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>Reverb</h4>
+                    <p>La reverb es un sonido que permite generar un eco que tiende al infinito y luego se desvanece
+                    generado la sensación de espacios vacíos al rededor del sonido</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Este efecto es uno de los más comunes y uno de mis favoritos, cuando se domina puedes
+                        alcanzar mucha calidad en tus mezclas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/options_panel/panel_opciones.gif" >
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/micro_module/options_panel/opcion_agregar.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>Delay</h4>
+                    <p>Este efecto permite generar repeticiones del sonido, es un eco diferente a la reverb, a diferencia
+                    de la reverb no tiende al infinito, repite de manera periódica y controlada el sonido, tan solo
+                    reduce los decibeles emitidos por cada pulso</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>¿Conoces el sonido de eco que se genera en la cima de una montaña al gritar? ese es un tipo de
+                        delay natural</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2>Parámetros de los plugins</h2>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>Threshold o umbral</h4>
+                    <p>Este es un paramétro que podemos encontrar en los plugins de compresión,
+                        se trata del límite donde el compresor empezará a actuar, eso quiere decir
+                        que el compresor reducirá los picos hasta ese límite de decibeles</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Definir un buen umbral hará que tu mezcla suene más estable y profesional</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/options_panel/panel_opciones.gif" >
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/micro_module/options_panel/opcion_agregar.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>Decay</h4>
+                    <p>El decay permite controlar que tanto se mantiene el sonido en su pico máximo antes de reducir
+                    la cantidad de decibeles</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Este parámetro se complemente con el sustain, el cuál una vez este termina de aplicarse
+                        da paso al siguiente</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>Sustain</h4>
+                    <p>El sustain permite controlar que tanto se mantiene el sonido tras reducir su pico máximo, es decir
+                    que cuando finalice el decay comenzará a actuar el sustain</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Este es muy útil cuando quieres que un sonido perdure durante más tiempo o cuando quieres cortarlo,
+                        eso va en la creatividad e intensión de cada productor</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/options_panel/panel_opciones.gif" >
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/micro_module/options_panel/opcion_agregar.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>Attack</h4>
+                    <p>Este es un parámetro particular que implica cuánto retraso va a tener el compresor en actuar,
+                    normalmente suelen ser unos milisegundos</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Este parámetro se utiliza para generar una compresión agresiva o suave según el sonido
+                        que estés procesando</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>Ratio</h4>
+                    <p>El ratio es una relación que permite definir la cantidad de decibeles a comprimir en un sonido,
+                    siempre es en una relación n:1 en donde n puede ser un número máximo definido en cada compresor</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Cuando un sonido se comprime en una relación 4:1 por ejemplo, implica que por cada 4
+                        decibeles del sonido que ingresan al compresor, la salida es de 1 decibel</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/options_panel/panel_opciones.gif" >
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/micro_module/options_panel/opcion_agregar.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>Knee</h4>
+                    <p>Este parámetro no se encuentra en todos los plugins, sin embargo permite una mayor suavidad
+                    en la compresión por ejemplo, o incluso mayor agresividad dependiendo su configuración</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>¿Quiéres saber la diferencia? Ve a FL, carga un sonido y procesalo, ¡Veamos como nos va!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>Release</h4>
+                    <p>Este parámetro permite controlar el tiempo que tarda en disminuir el pico máximo del sonido
+                        tras soltar la nota que estás tocando</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Este es un parámetro que se puede confundir con el decay, sin embargo, para entenderlo
+                        más fácil, cuando tocas la nota controlas el release y cuando la sueltas y finalizar este
+                        comienza a actuar el decay</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/options_panel/panel_opciones.gif" >
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/micro_module/options_panel/opcion_agregar.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>Gain</h4>
+                    <p>Este permite ajustar la ganancia de volumen del sonido que estás comprimiendo</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Cuando comprimes el sonido estás perdiendo decibeles en el camino, para compensar la
+                        pérdida utiliza el gain para equilibrar el sonido, debe sonar igual de fuerte antes y
+                        después de comprimir</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>Dry</h4>
+                    <p>Este parámetro se encuentra en efectos como la reverb y el delay y determina cuánto
+                    sonido pasará sin procesar</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Si traducimos literalmente "Dry" significa seco, como la reverb y el delay son efectos
+                        de espacialidad esto implica menor eco generado por los efectos, esto genera un sonido más
+                        "Seco" y menos procesado</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/options_panel/panel_opciones.gif" >
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/micro_module/options_panel/opcion_agregar.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>Wet</h4>
+                    <p>Este es el parámetro contrario al dry, implica mayor sonido procesado de reverb y delay</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Entre más alto esté este valor, mayor será la cantidad de eco producida por el sonido procesado,
+                        tanto el wet como el dry también se encuentra en algunos efectos de modulación vistos anteriormente</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>Speed</h4>
+                    <p>Esta es la velocidad de modulación de la señal de la reverbs</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Te invito a que abras el FL para que revises como funciona este parámetro, ¡Es muy
+                        interesante!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/options_panel/panel_opciones.gif" >
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/micro_module/options_panel/opcion_agregar.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>Hi-Cut</h4>
+                    <p>Este parámetro implica un recorte en frecuencias altas, en plugins como la reverb se puede apagar
+                    o manipular desde los 500 Hz en adelante</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Al igual que el low cut, estos son parámetros que permiten ecualizar algunos efectos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>Low-Cut</h4>
+                    <p>Este parámetro hace lo contrario al hi-cut, lo que hace es recortar las frecuencias bajas
+                    hasta un máximo de 3kHz</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Si bien puedes usar estos parámetros para ecualizar la reverbs, más adelante aprenderás
+                        una técnica más avanzada que permitirá darle un sonido más profesional e interesante a tu mezcla</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/options_panel/panel_opciones.gif" >
+            </div>
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</main>
+
+<script src="{% static 'learning_mixture_app/vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+</html>
+
+{% endblock %}

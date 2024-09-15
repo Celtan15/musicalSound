@@ -1,0 +1,176 @@
+{% extends 'base_app/head_foot/base.html' %}
+
+{% block content %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Learning FL Studio interface</title>
+    
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+    
+    <link href="{% static 'interface_module_app/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .left {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .right {
+          flex: 1;
+          margin-left: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .right img {
+          float: left;
+          margin-left: 140px;
+          max-width: 100%;
+          height: auto;
+          border-radius: 8px;
+      }
+      .dialog-box {
+          border: 1px solid #0c0909;
+          margin-left: auto;
+          padding: 20px;
+          width: 80%;
+          max-width: 200px;
+          background-color: rgba(91, 149, 166, 0.99);
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+          border-radius:10px;
+      }
+      .dialog-box h2 {
+          margin-top: 0;
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'interface_module_app/css/manage.css' %}" rel="stylesheet">
+  </head>
+  <body>
+
+<main>
+    <!-- START THE FEATURETTES -->
+    <div class="container marketing">
+        <h1 style="color: white; margin-left: 3rem; margin-top: 3rem; margin-right: 3rem; text-align: center; margin-bottom: 3rem;">Aprende sobre técnicas básicas para mezclar en tus producciones musicales</h1>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <p> En el panel lateral de FL Studio se encuentra el Browser o explorador, en donde podrás navegar a través de los
+                        diferentes archivos, carpetas o plugins que ofrece FL Studio
+                    </p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <h1>¡Hola!</h1>
+                        <p>En la parte lateral de FL Studio encontrarás el siguiente panel.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/side_panel/panel_lateral.gif" >
+            </div>
+        </div><!-- /.row -->
+
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/micro_module/side_panel/opcion_combo.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <p>En la primera parte encontrarás el "Browser option" con el que puedes ocultar o mostrar carpetas, puedes
+                        acceder al historial de navegación, puedes encontrar diferentes vistas que te resultarán útiles, como una
+                        "vista previa de la muestra completa", "mostrar iconos y texto en pestañas"
+                    </p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Con la opción de "Collapse structure", puedes revertir la estructura de las carpetas.</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.row -->
+
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <p> En este panel encontrarás la opción "Current project", en donde encuentras los patrones, efectos,
+                        generadores de sonido, además de algunos elementos de la interfaz como controles. Esta herramienta permite
+                        encontrar de manera rápida los elementos que estes utilizando en tu proyecto actual.
+                    </p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Con esta opción puedes ver el historial de tus acciones en tu proyecto.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/side_panel/opcion_current.gif" >
+            </div>
+        </div><!-- /.row -->
+
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/micro_module/side_panel/opcion_plugin.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <p>La opción "Plugin database", te muestra los plugins de los instrumentos que utilizas en tu proyecto, aquí
+                        podrás encontrar plugin de efectos para ecualizadores, delay. Así como en la opción "Generators", encuentrás
+                        instrumentos como pianos, bajos, etc. Con "Installed" puedes ver los plugins que se hayan instalado en
+                        una carpeta de FL Studio.
+                    </p>
+
+                    <p> Con "Plugin presets", puedes acceder a las configuraciones de los instrumentos o efectos. Cada preset
+                        configura un instrumento para crear un sonido en particular.
+                    </p>
+
+                    <p>En "Channel presets", encuentras los canales de los instrumentos que estás utilizando en tu proyecto, además
+                        desde esta opción puedes configurarlos de tal manera que lo requiera tu proyecto
+                    </p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>En la opción "Recent files", puedes visualizar los archivos recientes en FL Studio.</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.row -->
+
+    </div><!-- /.container -->
+</main>
+
+    <script src="{% static 'learning_mixture_app/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+      
+  </body>
+</html>
+
+{% endblock %}

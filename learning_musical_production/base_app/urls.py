@@ -11,7 +11,6 @@ urlpatterns = [
     path('logout/', auth_views.LogoutView.as_view(next_page='/'), name='Logout'),
     path('sign_up/', views.sign_up, name='Sign_up'),
     path('index/', views.index, name='Index'),
-    path('learning_mixture/', views.learning_mixture, name='Learning_mixture'),
     path('learning_mastering/', views.learning_mastering, name='Learning_mastering'),
     path('tips/', views.tips, name='Tips'),
     path('evaluations/', views.module_evaluations, name='Evaluations'),

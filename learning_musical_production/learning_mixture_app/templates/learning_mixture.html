@@ -1,0 +1,125 @@
+{% extends 'base_app/head_foot/base.html' %}
+
+{% block content %}
+<!doctype html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Learning mixture</title>
+    
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+    
+    <link href="{% static 'learning_mixture_app/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'learning_mixture_app/css/manage.css' %}" rel="stylesheet">
+  </head>
+  <body>
+
+<main>
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+    <h1 style="color: white; margin-left: 3rem; margin-top: 3rem; margin-right: 3rem; text-align: center; margin-bottom: 3rem;">Aquí aprenderás desde los conceptos básicos hasta técnicas de mezcla</h1>
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4", style="margin-top: 4rem;">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+        <h2 class="fw-normal">Conceptos</h2>
+        <p>La mezcla tiene una gran variedad de conceptos, aquí te enseñamos algunos que serán muy importantes en tu aprendizaje</p>
+        <p><a class="btn btn-secondary" href="{% url 'Learning_concepts' %}">Comenzar &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4"style="margin-top: 4rem;">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+        <h2 class="fw-normal">Técnicas básicas</h2>
+        <p>Aquí aprenderás cadenas de plugins básicas para mejorar tu sonido</p>
+        <p><a class="btn btn-secondary" href="{% url 'Learning_basic_techniques' %}">Comenzar &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4", style="margin-top: 4rem;">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+        <h2 class="fw-normal">Técnicas medias</h2>
+        <p>Las técnicas básicas están bien, pero debes tener un arsenal más completo para producir, aquí te contamos algunas técnicas útiles y que requieren un poco más de práctica</p>
+        <p><a class="btn btn-secondary" href="{% url 'Learning_mid_techniques' %}">Comenzar &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4", style="margin-top: 4rem; margin-left: 24rem;">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+        <h2 class="fw-normal">Técnicas avanzadas</h2>
+        <p>Expertos en el área recomiendan ciertas técnicas que conllevan mayor trabajo y conocimiento, algunas de estas no las podrás utilizar en FL Studio, pero es bueno conocerlas para que cuando cambies a un DAW más poderoso puedas sacarle el máximo provecho</p>
+        <p><a class="btn btn-secondary" href="{% url 'Learning_advance_techniques' %}">Comenzar &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+  </div><!-- /.container -->
+</main>
+
+    <script src="{% static 'learning_mixture_app/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'learning_mixture_app/static/interface_module_app/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+      
+  </body>
+</html>
+
+{% endblock %}
