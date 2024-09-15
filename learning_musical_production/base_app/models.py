@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import AbstractBaseUser, UserManager
+from django.contrib.auth.models import AbstractBaseUser, UserManager, User
 
 class Micro_module(models.Model):
     name=models.CharField(max_length=40)
@@ -28,6 +28,25 @@ class Side_panel(Micro_module):
 class Workstation(Micro_module):
     images=models.ImageField(upload_to='micro_module/workstation')
 
+class Pregunta(models.Model):
+
+    NUM_RES_PERMITIDAS = 1
+
+    texto = models.TextField(verbose_name='Introduce pregunta')
+    max_resultado = models.DecimalField(verbose_name='Calificación máxima', default=3, decimal_places=2, max_digits=6)
+    interface_evaluation = models.ForeignKey('Interface_evaluation', on_delete=models.CASCADE, related_name='preguntas')
+
+    def __str__(self):
+        return self.texto
+
+class ElegirRespuesta(models.Model):
+
+    MAXIMO_RESPUESTA = 4
+
+    pregunta_elegir = models.ForeignKey(Pregunta, on_delete=models.CASCADE, related_name='opciones')
+    texto_elegir = models.TextField(verbose_name='Introduce una opción de respuesta' )
+    correcta_elegir = models.BooleanField(default=False, null=False, verbose_name='¿Esta es la opción correcta?')
+    
 class Concepts(Micro_module):
     images=models.ImageField(upload_to='micro_module/concepts')
 
@@ -49,8 +68,56 @@ class Evaluations (models.Model):
     number_attempts=models.IntegerField()
 
     def __str__(self):
-        return 'El modulo se llama %s , posee las siguientes preguntas %s y evalua los conocimientos en interfaz de FL' %(self.name,
-        self.questions)
+        return self.texto
+
+class Evaluations (models.Model):
+    usuario = models.OneToOneField(User, on_delete=models.CASCADE)
+    resultado_total = models.DecimalField(verbose_name='Resultado total', default=0, decimal_places=2, max_digits=10, null=True)
+
+    def nuevos_intentos(self, pregunta):
+        intento = RespuestaUsuario(pregunta = pregunta, evaluacion_user=self)
+        intento.save()
+
+    def nuevas_preguntas(self):
+        respondidas = RespuestaUsuario.objects.filter(evaluacion_user=self).values_list('pregunta__pk', flat=True)
+        preguntas_restantes = Pregunta.objects.exclude(pk__in = respondidas)
+        if not preguntas_restantes.exists():
+            return None
+        return random.choice(preguntas_restantes)
+
+    def validar_intento(self, pregunta_respondida, respuesta_seleccionada):
+        if pregunta_respondida.pregunta_id != respuesta_seleccionada.pregunta_id:
+            return
+
+        pregunta_respondida.respuesta_seleccionada = respuesta_seleccionada
+        if respuesta_seleccionada.correcta is True:
+            pregunta_respondida.correcta = True
+            pregunta_respondida.resultado = respuesta_seleccionada.pregunta.max_resultado
+            pregunta_respondida.respuesta = respuesta_seleccionada
+
+        else:
+            pregunta_respondida.respuesta = respuesta_seleccionada
+
+        pregunta_respondida.save()
+        self.actualizar_resultado()
+
+    def actualizar_resultado(self):
+        resultado_actualizado = self.intentos.filter(correcta=True).aggregate(models.Sum('resultado'))['resultado__sum']
+        self.resultado_total = resultado_actualizado
+        self.save()
+
+class RespuestaUsuario(models.Model):
+    evaluacion_user = models.ForeignKey(Evaluations, on_delete=models.CASCADE, related_name='intentos')
+    fecha_respuesta = models.DateTimeField(auto_now_add=True)
+    pregunta= models.ForeignKey(Pregunta, on_delete=models.CASCADE)
+    respuesta = models.ForeignKey(ElegirRespuesta, on_delete=models.CASCADE, null=True)
+    correcta= models.BooleanField(verbose_name='¿Esta es la respuesta correcta?', default=False, null=False)
+    resultado = models.DecimalField(verbose_name='Resultado', default=0, decimal_places=2, max_digits=6)
+
+class Interface_evaluation(Evaluations):
+
+    class Meta:
+        verbose_name='interface_module_evaluation'
 
 class Modules(models.Model):
     name=models.CharField(max_length=50)
@@ -67,11 +134,6 @@ class Modules(models.Model):
             return 'El modulo se llama %s , se encuentra desbloqueado y posee %s micromódulos, llamados %s' %(self.name, 
             self.quantity_microModules, self.micro_modules)
 
-class Interface_evaluation(Evaluations):
-    
-    class Meta:
-        verbose_name='interface_module_evaluation'    
-    
 class Mixture_evaluation(Evaluations):
     
     class Meta:

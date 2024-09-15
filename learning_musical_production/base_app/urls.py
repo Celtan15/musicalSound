@@ -13,10 +13,13 @@ urlpatterns = [
     path('index/', views.index, name='Index'),
     path('learning_mastering/', views.learning_mastering, name='Learning_mastering'),
     path('tips/', views.tips, name='Tips'),
-    path('evaluations/', views.evaluations, name='Evaluations'),
+    path('evaluations/', views.module_evaluations, name='Evaluations'),
     path('who_we_are/', views.who_we_are, name='Who_we_are'),
     path('about/', views.about, name='About'),
     path('feedback/', views.feedback, name='Feedback'),
+    path('evaluations_answers/', views.resultado_pregunta, name='Evaluations_answers'),
+    path('evaluations_questions/', views.evaluations, name='Evaluations_questions'),
+
 ]
 
 urlpatterns+=static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

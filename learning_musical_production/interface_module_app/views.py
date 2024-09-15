@@ -2,6 +2,9 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from interface_module_app.forms import Feedback_form
 from base_app.models import Options_panel, Side_panel, Workstation, Top_panel
+from django.shortcuts import render
+
+from django.contrib.auth.decorators import login_required
 
 #Esto aún no es funcional para el proyecto, pero es la manera correcta para capturar respuestas y pasarlas a otra url,
 #más adelante servirá para poder recoger las respuestas de los usuarios en la evaluacion del modulo
