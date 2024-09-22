@@ -34,110 +34,7 @@
       <change beforePath="$PROJECT_DIR$/learning_musical_production/interface_module_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/interface_module_app/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learning_musical_production/interface_module_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/interface_module_app/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learning_musical_production/musical_production/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/musical_production/settings.py" afterDir="false" />
-    <list default="true" id="1dce875d-1dd1-4008-9cf8-f076e06490e4" name="Changes" comment="Se agregó contenido al modulo interfaz en el panel workstation">
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/css/manage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap-grid.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap-grid.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap-grid.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap-reboot.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap-utilities.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap-utilities.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap-utilities.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap-utilities.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap-utilities.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/css/bootstrap.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/js/bootstrap.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/js/bootstrap.esm.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/js/bootstrap.esm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/js/bootstrap.esm.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/css/font-awesome.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/less/animated.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/less/bordered-pulled.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/less/core.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/less/fixed-width.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/less/font-awesome.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/less/icons.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/less/larger.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/less/list.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/less/mixins.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/less/path.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/less/rotated-flipped.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/less/screen-reader.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/less/stacked.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/less/variables.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/scss/_animated.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/scss/_bordered-pulled.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/scss/_carousel.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/scss/_core.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/scss/_fixed-width.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/scss/_icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/scss/_larger.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/scss/_list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/scss/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/scss/_path.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/scss/_rotated-flipped.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/scss/_screen-reader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/scss/_stacked.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/font-awesome/scss/font-awesome.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/jquery/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/jquery/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/jquery/jquery.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/jquery/jquery.slim.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/jquery/jquery.slim.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/static/learning_mixture_app/vendor/jquery/jquery.slim.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/templates/learning_advance_techniques.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/templates/learning_basic_techniques.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/templates/learning_concepts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/templates/learning_mid_techniques.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/templates/learning_mixture.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_musical_production/base_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/base_app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_musical_production/base_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/base_app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_musical_production/interface_module_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/interface_module_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/learning_mixture_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_musical_production/musical_production/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/musical_production/urls.py" afterDir="false" />
-    </list>
+    <list default="true" id="1dce875d-1dd1-4008-9cf8-f076e06490e4" name="Changes" comment="Se agregó contenido al modulo interfaz en el panel workstation" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -153,7 +50,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="paneles2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -170,9 +67,9 @@
     &quot;accountId&quot;: &quot;bb1ee317-69ef-4cad-a52f-0cfbdc9a3ced&quot;
   }
 }</component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -347,15 +244,5 @@
     <MESSAGE value="Se agregó contenido al modulo interfaz en el panel workstation" />
     <MESSAGE value="Se arregló la autenticación de los usuarios, y los formularios de login y sign up" />
     <option name="LAST_COMMIT_MESSAGE" value="Se arregló la autenticación de los usuarios, y los formularios de login y sign up" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/learning_musical_production/learning_mixture_app/views.py</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -37,4 +37,4 @@ def learning_top_panel(request):
 
 def learning_workstation(request):
     workstation=Workstation.objects.all()
-    return render(request, 'learning_advance_techniques.html', {'workstation': workstation})
+    return render(request, 'learning_glossary.html', {'workstation': workstation})

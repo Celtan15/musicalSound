@@ -46,7 +46,9 @@ class ElegirRespuesta(models.Model):
     pregunta_elegir = models.ForeignKey(Pregunta, on_delete=models.CASCADE, related_name='opciones')
     texto_elegir = models.TextField(verbose_name='Introduce una opción de respuesta' )
     correcta_elegir = models.BooleanField(default=False, null=False, verbose_name='¿Esta es la opción correcta?')
-    
+
+class Glossary(Micro_module):
+    images=models.ImageField(upload_to='micro_module/glossary')
 class Concepts(Micro_module):
     images=models.ImageField(upload_to='micro_module/concepts')
 
@@ -55,9 +57,6 @@ class Basic_techniques(Micro_module):
 
 class Mid_techniques(Micro_module):
     images=models.ImageField(upload_to='micro_module/mid_techniques')
-
-class Advance_techniques(Micro_module):
-    images=models.ImageField(upload_to='micro_module/advance_techniques')
 
 class Evaluations (models.Model):
     name=models.CharField(max_length=50)

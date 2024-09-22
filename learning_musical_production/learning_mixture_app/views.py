@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from interface_module_app.forms import Feedback_form
-from base_app.models import Concepts, Basic_techniques, Mid_techniques, Advance_techniques
+from base_app.models import Concepts, Basic_techniques, Mid_techniques, Glossary
 
 #Esto aún no es funcional para el proyecto, pero es la manera correcta para capturar respuestas y pasarlas a otra url,
 #más adelante servirá para poder recoger las respuestas de los usuarios en la evaluacion del modulo
@@ -32,6 +32,6 @@ def learning_mid_techniques(request):
     mid=Mid_techniques.objects.all()
     return render(request, 'learning_mid_techniques.html', {'learning_mid_techniques': mid})
 
-def learning_advance_techniques(request):
-    advance=Advance_techniques.objects.all()
-    return render(request, 'learning_advance_techniques.html', {'workstation': advance})
+def learning_glossary(request):
+    glossary=Glossary.objects.all()
+    return render(request, 'learning_glossary.html', {'workstation': glossary})
