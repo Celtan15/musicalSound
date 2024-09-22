@@ -20,6 +20,7 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.urls import include, path
 from musical_production import views
 
+
 #Aquí se van a incluir todas las urls de cada una de las aplicaciones
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,5 +28,6 @@ urlpatterns = [
     path('template_testing/', views.templates_testing),
     path('', include('base_app.urls')),
     path('', include('interface_module_app.urls')),
+    path('', include('learning_mixture_app.urls')),
     path('accounts/', include(urls)),
 ]

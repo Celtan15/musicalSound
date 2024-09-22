@@ -4,18 +4,53 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1dce875d-1dd1-4008-9cf8-f076e06490e4" name="Changes" comment="Se agregó contenido al módulo de interfaz en el panel lateral">
+    <list default="true" id="1dce875d-1dd1-4008-9cf8-f076e06490e4" name="Changes" comment="Se arregló la autenticación de los usuarios, y los formularios de login y sign up">
+      <change afterPath="$PROJECT_DIR$/learning_musical_production/base_app/templates/base_app/evaluations_answers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learning_musical_production/base_app/templates/base_app/evaluations_questions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learning_musical_production/interface_module_app/templates/questions_interface.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/base_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/base_app/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/base_app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/base_app/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/base_app/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/base_app/migrations/0002_remove_modules_users_user_interfaces.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/base_app/migrations/0003_rename_interfaces_user_interface_user_mastering_and_more.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/base_app/migrations/0004_micro_module_alter_evaluations_qualification_and_more.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/base_app/migrations/0005_alter_micro_module_progression.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/base_app/migrations/0006_login.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/base_app/migrations/0007_rename_nickname_user_username.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/base_app/migrations/0008_alter_user_managers_user_last_login_user_password.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/base_app/migrations/0009_alter_user_managers_alter_user_date_birth.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/base_app/migrations/0010_user_is_staff_user_is_superuser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/base_app/migrations/0011_alter_user_managers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/base_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/base_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/base_app/templates/base_app/evaluations.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/base_app/templates/base_app/evaluations.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/base_app/templates/base_app/head_foot/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/base_app/templates/base_app/head_foot/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/base_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/base_app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/base_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/base_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/interface_module_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/interface_module_app/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/interface_module_app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/interface_module_app/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/interface_module_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/interface_module_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/interface_module_app/templates/answers.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/interface_module_app/templates/answers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/interface_module_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/interface_module_app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/interface_module_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/interface_module_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_musical_production/musical_production/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_musical_production/musical_production/settings.py" afterDir="false" />
+    <list default="true" id="1dce875d-1dd1-4008-9cf8-f076e06490e4" name="Changes" comment="Se agregó contenido al modulo interfaz en el panel workstation" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="building_interface_module" />
+        <entry key="$PROJECT_DIR$" value="paneles2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,8 +64,11 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Celtan15/musicalSound.git&quot;,
-    &quot;accountId&quot;: &quot;50163967-3bf9-4ad7-a24c-7ebf3d65e642&quot;
+    &quot;accountId&quot;: &quot;bb1ee317-69ef-4cad-a52f-0cfbdc9a3ced&quot;
   }
+}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
 }</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -46,25 +84,44 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;paneles&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;paneles2&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/diego/OneDrive/Documentos/DjangoProjects/AprendizajeProduccionMusical/musicalProduction&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ander/IdeaProjects/musicalSound/learning_musical_production/evaluations_module&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Building__mix__module&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Celtan games/Documents/Tesis/musicalSound/learning_musical_production/learning_mixture_app/templates&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ander\IdeaProjects\musicalSound\learning_musical_production\evaluations_module" />
+      <recent name="C:\Users\Celtan games\Documents\Tesis\musicalSound\learning_musical_production\learning_mixture_app\templates" />
+      <recent name="C:\Users\Celtan games\Documents\Tesis\musicalSound\learning_musical_production\learning_mixture_app" />
+      <recent name="C:\Users\Celtan games\Documents\Tesis\musicalSound\learning_musical_production\learning_mixture_app\static\learning_mixture_app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Celtan games\Documents\Tesis\musicalSound\learning_musical_production\learning_mixture_app\templates" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.387" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.387" />
       </set>
     </attachedChunks>
   </component>
@@ -83,7 +140,43 @@
       <workItem from="1667000794623" duration="91000" />
       <workItem from="1721425625940" duration="5904000" />
       <workItem from="1721488679426" duration="562000" />
-      <workItem from="1721505543254" duration="312000" />
+      <workItem from="1721505543254" duration="1482000" />
+      <workItem from="1722443210669" duration="22006000" />
+      <workItem from="1722544337535" duration="9237000" />
+      <workItem from="1722634672101" duration="5622000" />
+      <workItem from="1722889378469" duration="6095000" />
+      <workItem from="1722971818345" duration="13562000" />
+      <workItem from="1723061080825" duration="4281000" />
+      <workItem from="1723068048012" duration="1368000" />
+      <workItem from="1724278085695" duration="6066000" />
+      <workItem from="1724361312001" duration="564000" />
+      <workItem from="1724361993781" duration="9905000" />
+      <workItem from="1724446599327" duration="11692000" />
+      <workItem from="1724512820739" duration="11997000" />
+      <workItem from="1724530215357" duration="8671000" />
+      <workItem from="1724795305533" duration="1717000" />
+      <workItem from="1724874505444" duration="638000" />
+      <workItem from="1725290472841" duration="15877000" />
+      <workItem from="1725381256315" duration="8604000" />
+      <workItem from="1725464032008" duration="12549000" />
+      <workItem from="1725489061281" duration="7439000" />
+      <workItem from="1725550745229" duration="26581000" />
+      <workItem from="1725637258932" duration="16060000" />
+      <workItem from="1725731076363" duration="13011000" />
+      <workItem from="1725823683754" duration="6102000" />
+      <workItem from="1725895876071" duration="21366000" />
+      <workItem from="1725982968293" duration="18847000" />
+      <workItem from="1726068202046" duration="3102000" />
+      <workItem from="1726099865255" duration="5991000" />
+      <workItem from="1726156154823" duration="12687000" />
+      <workItem from="1726345928920" duration="1839000" />
+      <workItem from="1724530215357" duration="511000" />
+      <workItem from="1725827070742" duration="855000" />
+      <workItem from="1725832688857" duration="6689000" />
+      <workItem from="1725928467961" duration="148000" />
+      <workItem from="1726276360908" duration="3881000" />
+      <workItem from="1726350596857" duration="712000" />
+      <workItem from="1726418442752" duration="4244000" />
     </task>
     <task id="LOCAL-00001" summary="Se realizó cambios en el módulo interfaz, se llenó información en el panel de opciones y en el panel superior, también se ajustaron cambios en la pagina principal">
       <option name="closed" value="true" />
@@ -101,11 +194,38 @@
       <option name="project" value="LOCAL" />
       <updated>1721431389939</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Se agregó contenido al módulo de interfaz en el panel lateral">
+      <option name="closed" value="true" />
+      <created>1721506247538</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721506247538</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Se agregó contenido al modulo interfaz en el panel workstation">
+      <option name="closed" value="true" />
+      <created>1722555526405</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722555526405</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Se arregló la autenticación de los usuarios, y los formularios de login y sign up">
+      <option name="closed" value="true" />
+      <created>1724531011992</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1724531011994</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.py" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -121,6 +241,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Se realizó cambios en el módulo interfaz, se llenó información en el panel de opciones y en el panel superior, también se ajustaron cambios en la pagina principal" />
     <MESSAGE value="Se agregó contenido al módulo de interfaz en el panel lateral" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se agregó contenido al módulo de interfaz en el panel lateral" />
+    <MESSAGE value="Se agregó contenido al modulo interfaz en el panel workstation" />
+    <MESSAGE value="Se arregló la autenticación de los usuarios, y los formularios de login y sign up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se arregló la autenticación de los usuarios, y los formularios de login y sign up" />
   </component>
 </project>

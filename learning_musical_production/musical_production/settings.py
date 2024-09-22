@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'nested_admin',
     'base_app',
     'interface_module_app',
     'learning_mixture_app',
@@ -131,4 +132,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR, 'media')
 
-LOGIN_REDIRECT_URL='base_app/index.html'
+LOGIN_REDIRECT_URL='Index'
+LOGOUT_REDIRECT_URL = 'Home'

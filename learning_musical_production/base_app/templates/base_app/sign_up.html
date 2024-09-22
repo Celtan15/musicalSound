@@ -1,31 +1,115 @@
 {% extends 'base_app/head_foot/base.html' %}
 {% load static %}
 {% block content %}
+<!doctype html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Learning musical production</title>
 
-<section class="vh-100" style="margin-top: 2rem; margin-bottom: 2rem;">
-    <link href="{% static 'base_app/css/manage.css' %}" rel="stylesheet">
-    <h1 style="color: white; text-align: center; margin-bottom: 2rem;">Regístrate</h1>
-    <div class="container-fluid h-custom">
-      <div class="row d-flex justify-content-center align-items-center h-100">
-        <div class="col-md-9 col-lg-6 col-xl-5">
-          <img src="{% static 'base_app/img/img_random.jpg' %}"
-            class="img-fluid" alt="Sample image">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+
+    <link href="{% static 'base_app/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <style>
+        .register-photo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(76, 99, 108, 0.99)), url("../img/bg_main.jpg");
+            min-height: 100vh;
+        }
+
+        .form-container {
+            display: flex;
+            background-color: rgba(48, 64, 69, 0.99);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            max-width: 900px;
+        }
+
+        .image-holder {
+            width: 50%;
+            background-color: #e9ecef;
+        }
+
+        .image-holder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        form {
+            padding: 30px;
+            width: 50%;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+
+        }
+
+        .btn-block {
+            width: 100%;
+        }
+
+        .already {
+            display: block;
+            margin-top: 15px;
+            text-align: center;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .already:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'interface_module_app/css/manage.css' %}" rel="stylesheet">
+</head>
+<body>
+
+<main>
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <div class="register-photo">
+        <div class="form-container">
+            <div class="image-holder">
+                <img src="{% static 'base_app/img/img_random.jpg' %}"
+                     class="img-fluid" alt="Sample image">
+            </div>
+            <form method="post">
+                <h2 class="text-center" style="font-family: 'Comic Sans MS';"> Registrarse</h2>
+                {% csrf_token %}
+                <div class="form-group">
+                    {{ form.as_p }}
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> Estoy de acuerdo con los términos y condiciones.
+                    </label>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block btn-lg" type="submit">Registrarse</button>
+                </div>
+                <a href="{% url 'Login' %}" class="already">¿Ya tienes una cuenta? Inicia sesión aquí.</a>
+            </form>
+
         </div>
-        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-            <form class="form" action="" method="POST">
-              {% csrf_token %}
-              <!-- Cédula input -->
-              <table style="color: white; margin: auto;">
-                {{form.as_table}}
-              </table>
-              <div class="text-center text-lg-start mt-4 pt-2">
-                <button type="submit" class="btn btn-primary btn-lg"
-                  style="padding-left: 2.5rem; padding-right: 2.5rem;" style="color: white;">Regístrate</button>
-              </div>
-          </form>
-        </div>
-      </div>
     </div>
-</section>
+</main>
+<script src="{% static 'base_app/vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'base_app/static/interface_module_app/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>
 
 {% endblock %}

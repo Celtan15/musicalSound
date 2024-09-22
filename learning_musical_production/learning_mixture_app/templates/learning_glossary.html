@@ -1,0 +1,338 @@
+{% extends 'base_app/head_foot/base.html' %}
+
+{% block content %}
+
+<!doctype html>
+
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Learning FL Studio interface</title>
+    
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+    
+    <link href="{% static 'learning_mixture_app/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <style>
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .left {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .right {
+          flex: 1;
+          margin-left: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .right img {
+          float: left;
+          margin-left: 140px;
+          max-width: 100%;
+          height: auto;
+          border-radius: 8px;
+      }
+      .dialog-box {
+          border: 1px solid #0c0909;
+          margin-left: auto;
+          padding: 20px;
+          width: 80%;
+          max-width: 200px;
+          background-color: rgba(91, 149, 166, 0.99);
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+          border-radius:10px;
+      }
+      .dialog-box h2 {
+          margin-top: 0;
+      }
+
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'learning_mixture_app/css/manage.css' %}" rel="stylesheet">
+  </head>
+  <body>
+
+<main>
+
+    <!-- START THE FEATURETTES -->
+    <div class="container marketing">
+        <h1 style="color: white; margin-left: 3rem; margin-top: 3rem; margin-right: 3rem; text-align: center; margin-bottom: 3rem;">Aprende la terminología para comprender el mundo de la producción musical</h1>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h2>BPM</h2>
+                    <p>Con este término nos referimos a la cantidad de pulsaciones en un minuto</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <h1>¡Hola!</h1>
+                        <p>BPM significa "Beats per minute", en español "Pulsaciones por minuto", en la
+                        práctica esto lo sentimos como la velocidad a la que se escucha una canción</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/workstation/workspace.gif" >
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/micro_module/workstation/playlist.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h2>DAW</h2>
+                    <p>Es un programa o software que permite grabar, editar, procesar y mezclar
+                    múltiples pistas de audio de manera conjunta</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>DAW significa "Digital Audio Worsktation" o "Estación de Trabajo Audio Digital.
+                        El FL Studio que aprendiste es uno de los tantos DAW en el mercado, cuando te
+                        animes puedes aprender otro DAW y replicar los conocimiento que aquí adquirirás</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h2>Decibel o decibelio</h2>
+                    <p> Es una unidad de intensidad acústica. Un decibel o decibelio equivale a 0,1
+                    belios, esta unidad surge del cociente entre la presión que produce una onda y
+                    una presión tomada como referencia, se simboliza con dB</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>En otras palabras el decibel es la intensidad o volumen con el que
+                        escuchamos un sonido, como dato curioso el oído humano puede sufrir daños
+                        si te expones constantemente a 85 decibeles o más, lo recomendable es siempre
+                        estar por debajo de los 70 dB, ¡Cuida tus oídos, son tu principal herramienta
+                        de trabajo!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/workstation/workspace.gif" >
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/micro_module/workstation/playlist.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h2>Fuentes de audio</h2>
+                    <p>Es el dispositivo que reproduce el sonido contenido en el formato de grabación.
+                        O sea, lee la información del soporte (ya sea analógica o digital), y lo
+                        transforma en una pequeña señal de audio, ya lista para enviar al amplificador</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Si tienes unos buenos audífonos y un buen equipo de sonido mejorarás tu sonido,
+                        ya que podrás captar mejor algunas frecuencias, sin embargo, no tener el equipo
+                        necesario no te impide aventurarte y sumergirte en la industria musical</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h2>Loop</h2>
+                    <p>Es un anglicismo que en música electrónica consiste en uno o varios samples
+                        sincronizados que ocupan generalmente uno o varios compases musicales exactos
+                        y son grabados o reproducidos enlazados en secuencia una vez tras otra dando
+                        la sensación de continuidad</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>La música suele contener muchísimos loops, ya que la base musical siempre
+                        se repite, lo que cambia es la armonía o melodía</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/workstation/workspace.gif" >
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/micro_module/workstation/playlist.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h2>Masterización</h2>
+                    <p>Es el último proceso al que se somete una canción para conseguir cierta
+                        uniformidad entre todas las pistas de audio que la forman y, a su vez,
+                        para llegar a una calidad de audio tal para conseguir una percepción auditiva
+                        correcta de la canción desde cualquier dispositivo de reproducción de audio</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Esta técnica también se utiliza para ganar algunos decibelios de volumen medio de la
+                        canción, la razón principal es que nuestro oído percibe que todo suena mejor
+                        entre mas dB tenga</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h2>Mezcla</h2>
+                    <p>Técnica que se utiliza para ubicar en un plano auditivo tridimensional cada
+                        una de las pistas de las que se compone una producción musical, con el objetivo
+                        de conseguir una correcta regulación de todas ellas en frecuencia, panorama,
+                        volumen y rango temporal</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Una buena mezcla garantiza un sonido exquisito, lo que no hagas en la mezcla
+                        no lo corrijas en el master o etapa de masterización, primero sienta las bases
+                        y luego pasa al último paso</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/workstation/workspace.gif" >
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/micro_module/workstation/playlist.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h2>MIDI</h2>
+                    <p> Conjunto de estándares de 128 sonidos para tarjetas y dispositivos de sonido
+                        MIDI (sintetizadores, módulos de sonido, etc.)</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>MIDI significa "Musical Instrument Digital Interface", lo que es lo mismo
+                        "Interfaz Digital de Instrumentos musicales. Muchos de los plugins emulan un
+                        instrumento real, la idea de la interfaz del instrumento es familiarizarte
+                        con un entorno musical</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h2>Plugin</h2>
+                    <p>Es aquella aplicación que, en un programa informático, añade una funcionalidad
+                        adicional o una nueva característica al software</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Si traemos el término al mundo musical: Es una extensión que permite tener
+                        instrumentos y efectos en un DAW específico. De manera nativa cada DAW trae
+                        sus propios sonidos, efectos e instrumentos, sin embargo, compañías externas
+                        también desarrollan constamente MIDIs que puedes descargar e instalar para
+                        generar una mayor experiencia musical</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/workstation/workspace.gif" >
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/micro_module/workstation/playlist.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h2>Producción musical</h2>
+                    <p> La producción musical es el proceso de preproducción, creación y
+                        perfeccionamiento de una canción o pieza sonora grabada para su difusión pública</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>¡A  esto vinimos, esta es la razón por la que estamos aquí!, el proceso de
+                        producción abarca desde la escritura y composición hasta la grabación, diseño
+                        de sonido, mezcla y masterización. Te recomiendo aprender teoría musical, ya
+                        que no lo aprenderás conmigo en este entorno, es esencial para alcanzar obras
+                        de arte</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h2>Sonido</h2>
+                    <p> Es la propagación de las ondas mecánicas originadas por la vibración de un
+                        cuerpo a través de un fluido o un medio elástico, estas ondas pueden o no ser
+                        percibidas por los seres vivos, dependiendo de su frecuencia</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Para que te hagas una idea, el rango frecuencial que puede percibir el oído
+                        humano es de 20Hz hasta 20kHz, a más de 20kHz no escucharás nada, sin embargo,
+                        a menos de 20Hz se puede sentir la vibración de la onda aunque no la escuches.
+                        Cuando pongas un equipo de sonido a alto volumen y sientas una vibración es
+                        porque estás sintiendo esas frecuencias, a estas se le conocen como subgraves</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/workstation/workspace.gif" >
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/micro_module/workstation/playlist.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h2>Transitorio o transiente</h2>
+                    <p>Un sonido transitorio es una señal de duración muy breve que representa
+                        la etapa de ataque no armónica de un sonido</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>En otras palabras </p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h2>Frecuencia</h2>
+                    <p>Se refiere al número de oscilaciones que da una señal por segundo. Esas
+                    oscilaciones definirán cómo tienen que vibrar los altavoces de la fuente de sonido
+                    que vaya a reproducir nuestra canción</p>
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>¡Casi lo olvidamos!, cuando una frecuencia tiene pocas repeticiones, genera
+                        un sonido grave, cuando tiene muchas vibraciones genera un sonido agudo. Cada
+                        instrumento tiene una frecuencia dominante, más adelante hablaremos de ellos</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/micro_module/workstation/workspace.gif" >
+            </div>
+        </div><!-- /.row -->
+        <div class="grid">
+            <div class="dialog-box", style="margin-top: 4rem; margin-bottom: 4rem; text-align: center">
+            <p>Finalizamos con la primer parte de mezcla, ¡Felicitaciones!, ahora puedes regresar y elegir
+            otro módulo</p>
+            </div>
+        </div>
+    </div><!-- /.container -->
+
+</main>
+
+    <script src="{% static 'learning_mixture_app/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'learning_mixture_app/static/learning_mixture_app/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+      
+  </body>
+</html>
+
+{% endblock %}
