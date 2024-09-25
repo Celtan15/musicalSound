@@ -58,6 +58,9 @@ class Basic_techniques(Micro_module):
 class Mid_techniques(Micro_module):
     images=models.ImageField(upload_to='micro_module/mid_techniques')
 
+class Mastering():
+    images=models.ImageField(upload_to='micro_module/mastering')
+
 class Evaluations (models.Model):
     name=models.CharField(max_length=50)
     answer=models.CharField(max_length=5, blank=True)

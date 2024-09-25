@@ -34,4 +34,4 @@ def learning_mid_techniques(request):
 
 def learning_glossary(request):
     glossary=Glossary.objects.all()
-    return render(request, 'learning_glossary.html', {'workstation': glossary})
+    return render(request, 'learning_glossary.html', {'learning_glossary': glossary})
