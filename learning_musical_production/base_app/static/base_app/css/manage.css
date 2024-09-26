@@ -79,7 +79,7 @@ p {
 }
 
 #mainNav {
-  background-color: rgba(115, 187, 209, 0.99);
+  background: linear-gradient(to top, rgba(25, 87, 99, 0.99), rgba(91, 220, 208, 0.93));
   font-family: 'Raleway';
 }
 
@@ -88,12 +88,12 @@ p {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  color: rgb(0, 0, 0);
+  color: rgba(0, 0, 0, 0.97);
   font-weight: 800;
 }
 
 #mainNav .navbar-nav .nav-item.active .nav-link {
-  color: rgb(0, 0, 0);
+  color: rgba(0, 0, 0, 0.97);
 }
 
 @media (min-width: 1200px) {
@@ -130,8 +130,8 @@ p {
     left: 160px;
     width: 60%;
     margin-top: 80px;
-    background-color: rgba(126, 174, 189, 0.99);
-    color: rgb(0, 0, 0);
+    background-color: rgba(126, 174, 189, 0);
+    color: rgb(255, 255, 255);
     position: absolute;
   }
   .intro .intro-text .intro-button {
@@ -157,7 +157,7 @@ p {
   position: relative;
   padding: 3rem;
   margin: 0.5rem;
-  background-color: rgba(146, 219, 250, 0.99);
+  background: linear-gradient(to left, rgba(83, 163, 179, 0.99), rgba(144, 234, 226, 0.93));
   color: rgb(0, 0, 0);
 }
 
@@ -222,7 +222,8 @@ p {
 }
 
 .footer {
-   background-color: rgba(115, 187, 209, 0.99);
+  background: linear-gradient(to top, rgba(25, 87, 99, 0.99), rgba(91, 220, 208, 0.93));
+  font-family: 'Raleway';
 }
 
 .btn {
