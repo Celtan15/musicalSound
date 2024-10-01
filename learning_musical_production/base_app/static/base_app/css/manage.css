@@ -79,7 +79,7 @@ p {
 }
 
 #mainNav {
-  background-color: rgba(115, 187, 209, 0.99);
+  background: linear-gradient(to top, rgba(25, 87, 99, 0.99), rgba(91, 220, 208, 0.93));
   font-family: 'Raleway';
 }
 
@@ -88,12 +88,12 @@ p {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  color: rgb(0, 0, 0);
+  color: rgba(0, 0, 0, 0.97);
   font-weight: 800;
 }
 
 #mainNav .navbar-nav .nav-item.active .nav-link {
-  color: rgb(0, 0, 0);
+  color: rgba(0, 0, 0, 0.97);
 }
 
 @media (min-width: 1200px) {
@@ -123,15 +123,15 @@ p {
 
 @media (min-width: 992px) {
   .intro .intro-img {
-    width: 75%;
+    width: 70%;
     float: left;
   }
   .intro .intro-text {
     left: 160px;
     width: 60%;
     margin-top: 80px;
-    background-color: rgba(126, 174, 189, 0.99);
-    color: rgb(0, 0, 0);
+    background-color: rgba(126, 174, 189, 0);
+    color: rgb(255, 255, 255);
     position: absolute;
   }
   .intro .intro-text .intro-button {
@@ -157,8 +157,9 @@ p {
   position: relative;
   padding: 3rem;
   margin: 0.5rem;
-  background-color: rgba(146, 219, 250, 0.99);
+  background: linear-gradient(to left, rgba(83, 163, 179, 0.99), rgba(144, 234, 226, 0.93));
   color: rgb(0, 0, 0);
+  z-index: 1;
 }
 
 .cta .cta-inner:before {
@@ -170,6 +171,7 @@ p {
   left: -0.5rem;
   right: -0.5rem;
   border: 0.25rem solid rgba(255, 255, 255, 0.76);
+  z-index: 1;
 }
 
 .cta .cta-innerv {
@@ -177,6 +179,7 @@ p {
   padding: 3rem;
   margin: 0.5rem;
   background-color: rgba(255, 255, 255, 0.856);
+  z-index: 1;
 }
 
 @media (min-width: 992px) {
@@ -222,7 +225,8 @@ p {
 }
 
 .footer {
-   background-color: rgba(115, 187, 209, 0.99);
+  background: linear-gradient(to top, rgba(25, 87, 99, 0.99), rgba(91, 220, 208, 0.93));
+  font-family: 'Raleway';
 }
 
 .btn {
@@ -281,6 +285,68 @@ height: calc(100% - 73px);
 .h-custom {
 height: 180%;
 }
+}
+
+/* Contenedor que agrupa el muñeco y la burbuja */
+.dialog-container {
+  position: fixed;
+  bottom: 20vh;
+  right: -300px; /* Inicialmente fuera de la pantalla a la derecha */
+  display: flex;
+  align-items: flex-end;
+  animation: slideIn 2s ease forwards; /* Desliza el muñeco y burbuja */
+}
+
+/* Animación para deslizar la burbuja */
+@keyframes slideIn {
+  0% {
+    right: -300px; /* Empieza fuera de la pantalla */
+  }
+  100% {
+    right: 10px; /* Termina en su posición visible */
+  }
+}
+
+/* Estilo del muñeco PNG */
+.character {
+  width: 200px; /* Aumenta el tamaño del muñeco */
+  margin-left: 10px; /* Espacio entre la burbuja y el muñeco */
+}
+
+/* Estilo base para la burbuja */
+.c-buddy {
+  z-index: 1000;
+  position: relative;
+  background-color: rgba(144, 195, 177, 0.99);
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  width: 250px;
+  font-size: 14px;
+  opacity: 0;
+  animation: appear 1s ease forwards 1s; /* Aparece después de 1s */
+}
+
+
+
+/* Texto dentro de la burbuja */
+.c-buddy p {
+  margin: 0;
+  color: #333;
+}
+
+/* Animación para que la burbuja aparezca con retraso */
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Ligeramente por debajo */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* En su posición final */
+  }
 }
 
 

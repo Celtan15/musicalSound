@@ -1,14 +1,332 @@
 {% extends 'base_app/head_foot/base.html' %}
 
-{% load static %}
-
 {% block content %}
 
-<html>
-    <title>Learning mastering</title>
-    <body style="color:white">
-        Aquí van todos los micromódulos sobre la masterización de sonido
-    </body>
+<!doctype html>
+
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Learning FL Studio interface</title>
+    
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+    
+    <link href="{% static 'learning_mastering_app/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <style>
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .left {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .right {
+          flex: 1;
+          margin-left: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .right img {
+          float: left;
+          margin-left: 140px;
+          max-width: 100%;
+          height: auto;
+          border-radius: 8px;
+      }
+      .dialog-box {
+          border: 1px solid #0c0909;
+          margin-left: auto;
+          padding: 20px;
+          width: 80%;
+          max-width: 200px;
+          background-color: rgba(90, 135, 147, 0.99);
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+          border-radius:10px;
+      }
+      .dialog-box h2 {
+          margin-top: 0;
+      }
+
+      /* Contenedor que agrupa el muñeco y la burbuja */
+      .dialog-container {
+          position: relative;
+          bottom: 5vh;
+          right: -300px; /* Inicialmente fuera de la pantalla a la derecha */
+          display: flex;
+          align-items: flex-end;
+          animation: slideIn 2s ease forwards; /* Desliza el muñeco y burbuja */
+      }
+
+      /* Animación para deslizar la burbuja */
+      @keyframes slideIn {
+          0% {
+              right: -300px; /* Empieza fuera de la pantalla */
+          }
+          100% {
+              right: 10px; /* Termina en su posición visible */
+          }
+      }
+
+      /* Estilo del muñeco PNG */
+      .character {
+          width: 200px; /* Aumenta el tamaño del muñeco */
+          margin-left: 10px; /* Espacio entre la burbuja y el muñeco */
+      }
+
+      /* Estilo base para la burbuja */
+      .c-buddy {
+          z-index: 1000;
+          position: relative;
+          background-color: rgba(144, 195, 177, 0.99);
+          padding: 20px;
+          border: 2px solid #333;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          font-family: Arial, sans-serif;
+          width: 250px;
+          font-size: 14px;
+          opacity: 0;
+          animation: appear 1s ease forwards 1s; /* Aparece después de 1s */
+      }
+
+
+
+      /* Texto dentro de la burbuja */
+      .c-buddy p {
+          margin: 0;
+          color: #333;
+      }
+
+      /* Animación para que la burbuja aparezca con retraso */
+      @keyframes appear {
+          0% {
+              opacity: 0;
+              transform: translateY(20px); /* Ligeramente por debajo */
+          }
+          100% {
+              opacity: 1;
+              transform: translateY(0); /* En su posición final */
+          }
+      }
+
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'learning_mixture_app/css/manage.css' %}" rel="stylesheet">
+  </head>
+  <body>
+
+<main>
+
+    <!-- START THE FEATURETTES -->
+    <div class="container marketing">
+        <h1 style="color: white; margin-left: 3rem; margin-top: 3rem; margin-right: 3rem; text-align: center; margin-bottom: 3rem;">Aprende sobre la masterización</h1>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h2>¿Qué es la masterización?</h2>
+                    <p>En la producción musical, la masterización es la fase final de todo proyecto, en este se modifica
+                    todo el sonido global de tu producción. Como este proceso se trata de tan solo dar los últimos retoques,
+                    te recomendamos no hacer movimientos muy bruscos a la hora de configurar los plugins, si ves que tienes
+                    errores en la mezcla o sonidos molestos, entonces, ¡Detente, retrocede a la mezcla y reconfigura los
+                    sonidos y efectos de tu mezcla!, la idea es generar una cohesión de todos los elementos combinados,
+                    hacer que todo suene como un conjunto y no como elementos separados entre sí. En este caso no te daremos
+                    un paso a paso, sino una serie de consejos que te serán útiles para poder aplicar una buena cadena
+                    de plugins y efectos a tu master. Recuerda también que otro objetivo del master es obtener una mayor
+                    cantidad de decibeles sin distorsionar ni saturar la mezcla. ¡Vamos a ello!</p>
+
+                    <div class="dialog-container">
+                        <!-- Muñeco en formato PNG -->
+                        <img src="../media/personaje.png" alt="Muñeco" class="character">
+
+                        <!-- Burbuja de diálogo -->
+                        <div class="c-buddy">
+                            <p>¡Hola! Hemos recorrido un largo proceso para llegar hasta aquí, pero ya estamos llegando al final
+                                de la travesía, ¡Hagamos un último esfuerzo y aprendamos masterización!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/mastering_module/1_masterizacion.gif" >
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/mastering_module/2_identificar.gif" style="width: 100%;">
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h2>1. Identifica que necesita tu mezcla</h2>
+                    <p>El primer paso para poder masterizar es escuchar tu mezcla y darte cuenta de que problemas tiene
+                    o que se puede mejorar, en la producción no hay una cadena de plugins específica que te dé el sonido
+                    necesario en todas las mezclas, cada una tiene diferentes necesidades</p>
+                    <div class="dialog-container">
+                        <!-- Muñeco en formato PNG -->
+                        <img src="../media/personaje.png" alt="Muñeco" class="character">
+
+                        <!-- Burbuja de diálogo -->
+                        <div class="c-buddy">
+                            <p>DAW significa "Digital Audio Worsktation" o "Estación de Trabajo Audio Digital.
+                                El FL Studio que aprendiste es uno de los tantos DAW en el mercado, cuando te
+                                animes puedes aprender otro DAW y replicar los conocimiento que aquí adquirirás
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h2>2. Compara tu sonido con alguna canción exitosa del mismo género</h2>
+                    <p>Una forma de poder hacer un buen master es identificar lo que hace que una canción sea exitosa o tendencia
+                    en el género que estés produciendo, de esta manera podrás replicar aquello que puedas identificar que sea
+                    útil para tu toque final, hablaremos de que cosas pueden ser importantes</p>
+                    <div class="dialog-container">
+                        <!-- Muñeco en formato PNG -->
+                        <img src="../media/personaje.png" alt="Muñeco" class="character">
+
+                        <!-- Burbuja de diálogo -->
+                        <div class="c-buddy">
+                            <p>Las grandes industrias suelen tratar de equiparar ciertas frecuencias, por ejemplo, algunos
+                                géneros musical suelen potenciar fuertemente los graves o bajos de la canción. El objetivo es lograr un mayor impacto
+                                en el público en general y que tus producciones sean interesantes y aporten al mundo musical
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/mastering_module/3_comparar.gif" >
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/mastering_module/4_equilibrio.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h2>3. Equilibrio frecuencial</h2>
+                    <p>Ya que has elegido una canción del mismo género, céntrate en las frecuencias de la canción de
+                    referencia, intenta potenciar tu producción en esas frecuencias con un ecualizador y logra equilibrarla
+                    para que tenga un sonido estable, si te genera distorsión es porque en tu mezcla algo está mal,
+                    verifica que es y corrígelo antes de continuar</p>
+                    <div class="dialog-container">
+                        <!-- Muñeco en formato PNG -->
+                        <img src="../media/personaje.png" alt="Muñeco" class="character">
+
+                        <!-- Burbuja de diálogo -->
+                        <div class="c-buddy">
+                            <p>Esto hará que tu sonido suene increíble y que tenga impacto en el oyente, buscamos cautivar
+                                a los demás con nuestras producciones, pero no te olvides de que también debe gustarte a ti
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h2>4. Aplicar una compresión sutil</h2>
+                    <p>Ya hemos visto que la compresión es muy útil en la producción musical, en la masterización también
+                    es importante evitar las distorsiones ya que este será nuestro producto final. Para que tu compresión
+                    sea sutil utiliza un ataque alto, un release muy rápido, es decir valores bajitos, un ratio 2:1 o 4:1
+                    preferiblemente según la necesidad de la canción, ubica el umbral controlando la distorsión y recuerda
+                    recuperar el volumen perdido con la ganancia</p>
+                    <div class="dialog-container">
+                        <!-- Muñeco en formato PNG -->
+                        <img src="../media/personaje.png" alt="Muñeco" class="character">
+
+                        <!-- Burbuja de diálogo -->
+                        <div class="c-buddy">
+                            <p>Con una configuración así como esta puedes evitar las distorsiones sin desestabilizar tu mezcla
+                                o perder decibeles en el camino, recuerda que por el contrario buscamos ganar decibeles
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/mastering_module/5_compresion.gif" >
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/mastering_module/6_multibanda.gif" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h2>5. También puedes usar un compresor multibandas</h2>
+                    <p>Un compresor multibandas es un plugin especial que permite comprimir de manera personalizada en diferentes
+                    frecuencias, así no comprimes todo el sonido sino que puedes aplicar una mayor o menor compresión
+                    en algunas zonas  según tus necesidades</p>
+                    <div class="dialog-container">
+                        <!-- Muñeco en formato PNG -->
+                        <img src="../media/personaje.png" alt="Muñeco" class="character">
+
+                        <!-- Burbuja de diálogo -->
+                        <div class="c-buddy">
+                            <p>Esta técnica es un poco más avanzada, pero si la estudias puede serte muy útil y podrás
+                                alcanzar una mayor calidad
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.row -->
+        <section class="page-section cta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                        <div class="cta-inner text-center rounded">
+                            <h2 class="section-heading mb-4">
+                                <span class="section-heading-lower">Hemos llegado al final del viaje</span>
+                            </h2>
+                            <p class="mb-0">Muchas gracias por acompañarme, deseo que tu camino en la producción sea
+                            fructífero y recuerda aprender teoría musical, es muy importante saber sobre el tema para
+                            ser un mejor productor, nos veremos en una próxima ocasión. ¡Hasta luego!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div><!-- /.container -->
+
+</main>
+
+    <script src="{% static 'learning_mastering_app/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'learning_mastering_app/static/learning_mixture_app/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+      
+  </body>
 </html>
 
 {% endblock %}

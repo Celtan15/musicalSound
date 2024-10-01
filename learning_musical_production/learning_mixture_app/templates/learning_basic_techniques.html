@@ -15,7 +15,7 @@
     
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
     
-    <link href="{% static 'interface_module_app/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'mixture_module_app/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -69,7 +69,7 @@
           padding: 20px;
           width: 80%;
           max-width: 200px;
-          background-color: rgba(91, 149, 166, 0.99);
+          background-color: rgba(88, 152, 172, 0.99);
           box-shadow: 0 0 10px rgba(0,0,0,0.1);
           border-radius:10px;
       }
@@ -79,91 +79,706 @@
     </style>
 
     <!-- Custom styles for this template -->
-    <link href="{% static 'interface_module_app/css/manage.css' %}" rel="stylesheet">
+    <link href="{% static 'learning_mixture_app/css/manage.css' %}" rel="stylesheet">
   </head>
   <body>
 
 <main>
     <!-- START THE FEATURETTES -->
     <div class="container marketing">
-        <h1 style="color: white; margin-left: 3rem; margin-top: 3rem; margin-right: 3rem; text-align: center; margin-bottom: 3rem;">Aprende sobre técnicas básicas para mezclar en tus producciones musicales</h1>
+        <h1 style="color: white; margin-left: 3rem; margin-top: 3rem; margin-right: 3rem; text-align: center; margin-bottom: 3rem;">Aprende sobre lo más básico de la mezcla en producción musical</h1>
         <div class="row", style="margin-bottom: 40px">
             <div class="left">
                 <div class="row mb-4", style="margin-top: 4rem;">
-                    <p> En el panel lateral de FL Studio se encuentra el Browser o explorador, en donde podrás navegar a través de los
-                        diferentes archivos, carpetas o plugins que ofrece FL Studio
-                    </p>
+                    <h2>Definamos el principio</h2>
+                    <p>Antes de iniciar debes saber que hemos definido un paso 0, este paso es importante ya que
+                    es un paso en común que debes hacer antes de aplicar cualquier efecto, ¡Memorízalo muy bien,
+                    será nuestro punto de partida!</p>
+                    <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
                     <div class="dialog-box", style="margin-top: 4rem;">
                         <h1>¡Hola!</h1>
-                        <p>En la parte lateral de FL Studio encontrarás el siguiente panel.</p>
+                        <p>Esta es la parte que más me emociona, ¡Ahora, vamos a empezar con la mezcla!</p>
                     </div>
                 </div>
             </div>
             <div class="right">
-                <img src="../media/micro_module/side_panel/panel_lateral.gif" >
+                <img src="../media/mix_module/basic_techniques/0_mix.png" style="width: 120%;">
             </div>
         </div><!-- /.row -->
-
         <div class="row", style="margin-bottom: 40px">
             <div class="left">
-                <img src="../media/micro_module/side_panel/opcion_combo.gif" >
+                <img src="../media/mix_module/basic_techniques/1.patron.gif" style="width: 110%;">
             </div>
             <div class="right">
                 <div class="row mb-4", style="margin-top: 4rem;">
-                    <p>En la primera parte encontrarás el "Browser option" con el que puedes ocultar o mostrar carpetas, puedes
-                        acceder al historial de navegación, puedes encontrar diferentes vistas que te resultarán útiles, como una
-                        "vista previa de la muestra completa", "mostrar iconos y texto en pestañas"
-                    </p>
+                    <h4>1. Elige el sonido que vas a trabajar</h4>
+                    <p>Antes de aplicar cualquier efecto primero debes elegir el plugin o audio que vas a mezclar,
+                    una vez lo definas procede a lo siguiente</p>
+                    <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
                     <div class="dialog-box", style="margin-top: 4rem;">
-                        <p>Con la opción de "Collapse structure", puedes revertir la estructura de las carpetas.</p>
+                        <p>Recuerda tener un audio previamente cargado en la playlist o un plugin con algún patrón
+                        rítmico, melódico que hayas copiado o que se te haya ocurrido</p>
                     </div>
                 </div>
             </div>
         </div><!-- /.row -->
-
         <div class="row", style="margin-bottom: 40px">
             <div class="left">
                 <div class="row mb-4", style="margin-top: 4rem;">
-                    <p> En este panel encontrarás la opción "Current project", en donde encuentras los patrones, efectos,
-                        generadores de sonido, además de algunos elementos de la interfaz como controles. Esta herramienta permite
-                        encontrar de manera rápida los elementos que estes utilizando en tu proyecto actual.
-                    </p>
+                    <h4>2. Asigna un canal de audio</h4>
+                    <p>Elige cualquier canal de audio para tu sonido o patrón, posteriormente ponlo a reproducir y
+                    revisa que esté tomando el audio correctamente</p>
+                    <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
                     <div class="dialog-box", style="margin-top: 4rem;">
-                        <p>Con esta opción puedes ver el historial de tus acciones en tu proyecto.</p>
+                        <h1>¡Hola!</h1>
+                        <p>Revisa el canal de audio y el master para verificar que todo funcionae de manera adecuada</p>
                     </div>
                 </div>
             </div>
             <div class="right">
-                <img src="../media/micro_module/side_panel/opcion_current.gif" >
+                <img src="../media/mix_module/basic_techniques/2_canal.gif" >
             </div>
         </div><!-- /.row -->
-
         <div class="row", style="margin-bottom: 40px">
             <div class="left">
-                <img src="../media/micro_module/side_panel/opcion_plugin.gif" >
+                <img src="../media/mix_module/basic_techniques/3_slot.gif" style="width: 110%;">
             </div>
             <div class="right">
                 <div class="row mb-4", style="margin-top: 4rem;">
-                    <p>La opción "Plugin database", te muestra los plugins de los instrumentos que utilizas en tu proyecto, aquí
-                        podrás encontrar plugin de efectos para ecualizadores, delay. Así como en la opción "Generators", encuentrás
-                        instrumentos como pianos, bajos, etc. Con "Installed" puedes ver los plugins que se hayan instalado en
-                        una carpeta de FL Studio.
-                    </p>
-
-                    <p> Con "Plugin presets", puedes acceder a las configuraciones de los instrumentos o efectos. Cada preset
-                        configura un instrumento para crear un sonido en particular.
-                    </p>
-
-                    <p>En "Channel presets", encuentras los canales de los instrumentos que estás utilizando en tu proyecto, además
-                        desde esta opción puedes configurarlos de tal manera que lo requiera tu proyecto
-                    </p>
+                    <h4>3. Define el efecto que vas a utilizar</h4>
+                    <p>Recuerda buscar el plugin que necesitas, ve al mixer o mezclador y carga el efecto en un slot,
+                    tienes 10 disponibles por cada instrumento, ¡Utilízalos de la manera más adecuada!</p>
+                    <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
                     <div class="dialog-box", style="margin-top: 4rem;">
-                        <p>En la opción "Recent files", puedes visualizar los archivos recientes en FL Studio.</p>
+                        <p>Una vez que cargamos el plugin en nuestro slot de efectos procederemos a configurarlo,
+                        ¡En un momento veremos como hacerlo!</p>
                     </div>
                 </div>
             </div>
         </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h2>¿Cómo ecualizar?</h2>
+                    <p>Una vez que apliques el paso 0, prosigue aplicar la ecualización que más se acomode,
+                    FL Studio tiene varios ecualizadores, uno de los más populares y utilizados es el "Parametric
+                    EQ 2", ¡Veamos cómo funciona!</p>
+                    <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Carga el Parametric EQ 2 y vamos a manipular nuestro audio, puedes usarlo en un bombo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/mix_module/basic_techniques/4_ecualizador.gif" >
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/mix_module/basic_techniques/5_espectograma.gif" style="width: 110%;">
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>1. Define las frecuencias</h4>
+                    <p>Cada sonido tiene frecuencias que son dominantes de si, identifica cuál es la frecuencia
+                    que más desees resaltar</p>
+                    <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>En este ecualizador la frecuencia dominante se puede apreciar a través del espectograma
+                        entre más colorido sea, mayor serán los decibeles de esa frecuencia, fíjate en el espectograma
+                        del bombo, identifica las frecuencias de interés</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>2. Identifica las frecuencias importantes</h4>
+                    <p>Si miras detenidamente el bombo notarás que su frecuencia dominante es bastante baja,
+                    suele ser algo alrededor de 30hz-147hz, esas son las frecuencias que más nos interesan resaltar
+                    del bombo, sin embargo, notarás que no son las únicas que se generan, también entre los 1khz y
+                    6kHz verás los colores resaltados, eso es porque por allí se encuentran unos armónicos
+                    que ayudan a definir más los sonidos, prueba a modificar estas</p>
+                    <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>La idea de mezclar es tratar de llenar todo el espectro musical sin que se estorben
+                        instrumentos y sobrecarguen ciertas frecuencias, hay que mantener un balance de estos para
+                        tener un sonido agradable</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/mix_module/basic_techniques/6_frecuencias.gif" >
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/mix_module/basic_techniques/7_reducir_frecuencias.gif" style="width: 100%;">
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>3. Reduce aquellas frecuencias molestas o las que no aporten mucho</h4>
+                    <p>Una vez que hayas identificado las frecuencias dominantes y las hayas modificado a tu gusto
+                    vas a reducir aquellas frecuencias no importante o que no aporten tanto a la mezcla, este proceso
+                    se hace con el fin de ampliar el espacio en otras frecuencias que otros instrumentos ocuparán, así
+                    evitaremos perder el protagonismo de cada instrumento</p>
+                    <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Recuerda, lo importante es que cada instrumento tenga su espacio, no queremos que nada se sobrecargue
+                        y se ensucie la mezcla, queremos algo ligero para el oído y muy agradable</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>4. Elimina los residuales</h4>
+                    <p>Ya habiendo retirado lo que nos sobra y resaltado lo que nos interesa, vamos a proceder a eliminar
+                    las frecuencias que no aportan nada, para ello haz click derecho en el número 7 del ecualizador y usa un
+                    filtro paso bajo, también puedes elegir una curva más cerrada o abierta dando click derecho y eligiendo
+                    otro orden</p>
+                    <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Recuerda que nuestro oído no puede captar frecuencias más allá de los 20kHz, como elegimos un bombo
+                        empieza a recortar frecuencias hasta que notes que ya se empieza a modificar el sonido y detente justo ahí</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/mix_module/basic_techniques/8_residuales.gif" >
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/mix_module/basic_techniques/9_repetir.gif" style="width: 100%;" >
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>5. Repite el proceso</h4>
+                    <p>Ahora que ya aprendiste a hacer la ecualización básica, busca otro sonido y repite el paso a paso,
+                    notarás que con la práctica se vuelve un proceso mecánico</p>
+                    <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>¡La práctica hace el maestro, aventúrate a usar otros sonidos y combinarlos para lograr un sonido
+                            agradable!</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.row --><div class="row", style="margin-bottom: 40px">
+        <div class="left">
+            <div class="row mb-4", style="margin-top: 4rem;">
+                <h2>¿Cómo comprimir?</h2>
+                <p>Ahora vamos a aprender a comprimir un sonido, la compresión cumple varias funciones dentro de la mezcla
+                dento de las más comunes están: Reducir el rango dinámico de un sonido, dar pegada o fuerza a un sonido (es
+                decir resaltar su transiente) o aumentar las frecuencias más bajas para igualarlas a las más altas</p>
+                <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                <div class="dialog-box", style="margin-top: 4rem;">
+                    <p>Vamos a usar ahora la caja o snare, aplica el paso 0 y procede a buscar un compresor, para este
+                    caso utilizaré el "Fruity limiter" ya que es más visual y podemos entender mejor lo que está pasando</p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <img src="../media/mix_module/basic_techniques/10_comprimir.gif" >
+        </div>
+    </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/mix_module/basic_techniques/11_limitador.gif" style="width: 100%;">
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>0. Pon el limitador en modo compresión</h4>
+                    <p>Este paso solo se hace si utilizas el "Fruity limiter" ya que este posee 2 modos: Limitador y
+                    compresión; En este caso nos interesa usarlo como compresor</p>
+                    <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Cuando lo hayas hecho, familiarízate con el entorno, mira cada parámetro, reproduce el sonido
+                        para que veas el sonido original y enseguida vamos a manipularlo</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>1. Definamos el umbral o threshold</h4>
+                    <p>Antes de llegar acá tuviste que aprender sobre los parámetros de un compresor, ahora vamos a
+                    configurarlos en pro de llegar a un buen sonido, el primero de ellos es el umbral, redúcelo de
+                    manera que puedas notar una reducción en la transiente, esto lo podrás notar tanto en la gráfica
+                    como en el sonido</p>
+                    <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Hasta ahora no notarás el cambio, esto se debe a que el Ratio está en valor 1:1, es decir,
+                        por cada decibel que entra la salida es un decibel, en conclusión no está reduciendo el sonido, por
+                        ello, vamos al segundo paso</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/mix_module/basic_techniques/12_umbral.gif" >
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/mix_module/basic_techniques/13_ratio.gif" style="width: 100%;">
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>2. Ajusta el ratio</h4>
+                    <p>Ahora ajusta el ratio para reducir el pico máximo o transiente, para este ejercicio práctico puedes usar
+                    una relación 4:1, es una compresión suave y que nos permitirá equiparar el sonido máximo con el mínimo</p>
+                    <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Nuestra idea es equilibrar el sonido, con este ratio estamos logrando reducir un poco el pico, recuerda
+                        no abusa mucho del umbral y el ratio ya que puede generar un sonido sobrecomprimido y saturado que no será
+                        nada agradable</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>3. Juega con los demás parámetros</h4>
+                    <p>Ajusta el Knee, el attack, sustain y release a tu gusto, has pruebas por ahora solo queremos que te familiarices
+                    con el entorno virtual</p>
+                    <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Escucha como se modifica el sonido con cada parámetro, ajústalo a tu gusto, no hay equivocaciones
+                        en este caso, ¡Déjate llevar por la música</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/mix_module/basic_techniques/14_parametros.gif" >
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/mix_module/basic_techniques/15_gain.gif" style="width: 100%;">
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>4. Configura el gain o ganancia</h4>
+                    <p>Al pasar el sonido por un compresor pierde volumen, por ello se hace necesario aumentar el mismo
+                    con la ganancia, la idea es que cuando apagues el efecto y lo enciendas el sonido quede exactamente
+                    a la misma cantidad de decibeles o un valor aproximado en todo caso</p>
+                    <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Esto NO se debe hacer simplemente subiendo el volumen al instrumento modificado, por eso no
+                        utilizamos la perilla de volumen del plugin, esto generaría errores más adelante en la mezcla</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h2>¿Cómo hacer un panning o paneo?</h2>
+                    <p>Dentro de las técnicas básicas, esta es una de las más sencillas pero útiles que puedes tener en la
+                    mezcla, hay varias formas de hacer un paneo, ¡Veamos como lo podemos hacer!</p>
+                    <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>El objetivo del paneo es ocupar todo el espectro frecuencial de manera que genere la sensación de un
+                        concierto en vivo, donde cada instrumento suena a la derecha o izquierda dependiendo su ubicación en el escenario, se
+                        trata de lograr ocupar todo el estéreo en la mezcla</p>
+                    </div>
+                </div>
+            </div>
+        <div class="right">
+            <img src="../media/mix_module/basic_techniques/16_panning.gif" >
+        </div>
+    </div><!-- /.row -->
+    <div class="row", style="margin-bottom: 40px">
+        <div class="left">
+            <img src="../media/mix_module/basic_techniques/17_panomatic.gif" style="width: 100%;">
+        </div>
+        <div class="right">
+            <div class="row mb-4", style="margin-top: 4rem;">
+                <h4>1. Utilizando el plugin PanOMatic</h4>
+                <p>En este plugin podemos encontrar varios parámetros como gain, pan, AMT y SPD, para este ejemplo
+                solo basta con configurar el parámetro pan, si lo mueves a la izquierda verás como el sonido, se va
+                hacia la izquierda y visceversa</p>
+                <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                <div class="dialog-box", style="margin-top: 4rem;">
+                    <p>Ten en cuenta que esto solo lo puedes notar si tu fuente de audio es estéreo, si está en modo
+                    mono no notarás el cambio</p>
+                </div>
+            </div>
+        </div>
+    </div><!-- /.row -->
+    <div class="row", style="margin-bottom: 40px">
+        <div class="left">
+            <div class="row mb-4", style="margin-top: 4rem;">
+                <h4>2. Utilizando el paneo del sonido o plugin</h4>
+                <p>Si el sonido elegido está en un plugin simplemente debes ir al channel rack y al lado izquierdo
+                encontrarás el botón de panning, solo ajústalo según necesites, también puedes ingresar al plugin y
+                utilizar el botón de panning que aparece en la parte superior derecha. En caso de que el sonido sea precargado
+                en la playlist entonces deberás dar doble click y encontrarás el botón en la parte superior derecha o puedes
+                hacerlo también a través del channel rack seleccionando el apartado de audio o all en la parte de arriba izquierda</p>
+                <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                <div class="dialog-box", style="margin-top: 4rem;">
+                    <p>En lo personal este me parece el mejor método para hacer un paneo, es rápido y no consumimos
+                    un slot de efectos, nos podría servir para algo más</p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <img src="../media/mix_module/basic_techniques/18_paneo.gif" >
+        </div>
+    </div><!-- /.row -->
+    <div class="row", style="margin-bottom: 40px">
+        <div class="left">
+            <img src="../media/mix_module/basic_techniques/19_ajustes.gif" >
+        </div>
+        <div class="right">
+            <div class="row mb-4", style="margin-top: 4rem;">
+                <h4>3. A través del piano roll</h4>
+                <p>Puedes elegir un patrón creado e ir al piano roll, allí puedes ir a las opciones del piano roll
+                (es la flecha ubicada en la esquina superior izquierda del espacio de trabajo), luego ir a "Target
+                control" y posteriormente elegir "Channel panning", esto te abrirá un recuadro en la parte inferior
+                donde puedes elegir el paneo de cada nota y su cantidad</p>
+                <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                <div class="dialog-box", style="margin-top: 4rem;">
+                    <p>Esto nos permite un control más avanzado, ya que, podemos elegir poner cada nota musical de manera
+                    que suene de lado a lado si quisiéramos, ¡Pruébalo, te va a encantar!</p>
+                </div>
+            </div>
+        </div>
+    </div><!-- /.row -->
+    <div class="row", style="margin-bottom: 40px">
+        <div class="left">
+            <div class="row mb-4", style="margin-top: 4rem;">
+                <h2>¿Cómo utilizar la reverb y el delay?</h2>
+                <p>La reverb y el delay son efectos que pertenecen a la categoría de efectos de espacio y tiempo, estos
+                efectos son realmente increíbles y utilizados en la producción musical, se utilizan en una gran variedad
+                de sonidos incluidas las voces, vamos a aprender como utilizar estos 2 maravillosos efectos. Para la reverb
+                vamos a utilizar el "Fruity Reverb" y para el delay utilizaremos "Fruity delay 3". ¡Vamos con el paso a
+                paso!</p>
+                <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                <div class="dialog-box", style="margin-top: 4rem;">
+                    <p>Realmente me gusta mucho lo que se puede hacer con una reverb y un delay bien configurado, te
+                    sorprenderán gratamente</p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <img src="../media/mix_module/basic_techniques/20_reveeverb_delay.gif" >
+        </div>
+    </div><!-- /.row -->
+        <h2>Reverb</h2>
+    <div class="row", style="margin-bottom: 40px">
+        <div class="left">
+            <img src="../media/mix_module/basic_techniques/21_secciones_reveerb.png" style="width: 90%;">
+        </div>
+        <div class="right">
+            <div class="row mb-4", style="margin-top: 4rem;">
 
+                <h4>1. Identifiquemos las secciones</h4>
+                <p>En el caso de la reverb vamos a dividir las secciones desde la sección A hasta la sección E,
+                siendo A la gráfica que se previsualiza en tiempo real al lado izquierdo y E la sección donde se
+                encuentran los parámetros ER, Dry, Wet</p>
+                <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                <div class="dialog-box", style="margin-top: 4rem;">
+                    <p>Esto será crucial para poder entender donde y como configurar cada parámetro</p>
+                </div>
+            </div>
+        </div>
+    </div><!-- /.row -->
+    <div class="row", style="margin-bottom: 40px">
+        <div class="left">
+            <div class="row mb-4", style="margin-top: 4rem;">
+                <h4>2. ¡Modifiquemos la sección C!</h4>
+                <p>Vamos a configurar primero la sesión C, esto porque serán los parámetros que definirán mejor
+                    el sonido de la reverb. Con Size definirás el tamaño de la habitación donde se va a generar el eco,
+                    con mod vas a cambiar la profundidad que tiene dicha habitación, con diff cambiarás la forma de la
+                    habitación en la que está dicho instrumento. Por último Speed definirá la velocidad en la que se genera
+                    el rebote de las ondas sobre las paredes de la habitación</p>
+                <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                <div class="dialog-box", style="margin-top: 4rem;">
+                    <p>Acá tenemos total libertad para manipular nuestro sonido, prueba a modificar tu sonido y define
+                    los parámetros como más te gusten, ¡Seamos creativos!</p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <img src="../media/mix_module/basic_techniques/22_seccion_c.gif" >
+        </div>
+    </div><!-- /.row -->
+    <div class="row", style="margin-bottom: 40px">
+        <div class="left">
+            <img src="../media/mix_module/basic_techniques/23_seccion_d.gif" style="width: 100%;">
+        </div>
+        <div class="right">
+            <div class="row mb-4", style="margin-top: 4rem;">
+                <h4>3. ¡Modifiquemos la sección D!</h4>
+                <p>En esta sección encontrarás tan solo 4 parámetros, vamos a ver como usarlos. Bass te permite ajustar
+                cuánto tarda en decaer las frecuencias graves de la reverb. Decay determinará cuánto tiempo se prolongará
+                la reverb. Cross determina un punto desde el cuál las frecuencias bajas se potenciarán, (entre los 25Hz,
+                hasta los 2kHz). Damping es similar al Bass, solo que esté lo hará pero con las frecuencias altas</p>
+                <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                <div class="dialog-box", style="margin-top: 4rem;">
+                    <p>La mejor manera de aprender esto es en la práctica, toma tu sonido y configura los parámetros,
+                    recuerda que estamos en una fase exploratoria, aprovecha para reconocer como afecta cada elemento a tu
+                    sonido</p>
+                </div>
+            </div>
+        </div>
+    </div><!-- /.row -->
+    <div class="row", style="margin-bottom: 40px">
+        <div class="left">
+            <div class="row mb-4", style="margin-top: 4rem;">
+                <h4>4. ¡Modifiquemos la sección B!</h4>
+                <p>Ahora vamos a usar los filtros, acá encontraremos 3 opciones, veamos como configurarlos. En la opción
+                Mid/Side se determina si vas a tomar el audio insertado en modo mono o estéreo, en modo mono tomará  todo
+                lo que haya en el centro del espectograma y estéreo tomará los lados. El Hi-Cut y Low-Cut permiten recortar
+                las frecuencias altas y bajas respectivamente, configúralos como gustes, no hay restricciones</p>
+                <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                <div class="dialog-box", style="margin-top: 4rem;">
+                    <p>Con esto ya casi estamos al final, tan solo nos falta configurar una sesión</p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <img src="../media/mix_module/basic_techniques/24_seccion_b.gif" >
+        </div>
+    </div><!-- /.row -->
+    <div class="row", style="margin-bottom: 40px">
+        <div class="left">
+            <img src="../media/mix_module/basic_techniques/25_seccion_e.gif" style="width: 100%;">
+        </div>
+        <div class="right">
+            <div class="row mb-4", style="margin-top: 4rem;">
+                <h4>5. ¡Modifiquemos la sección E!</h4>
+                <p>Este será el toque final, aquí podremos definir que tanto sonido tendremos procesado con wet y cuánto
+                de la señal original tendremos con dry, este nos permite tener una salida de reverb natural o artificial
+                según se configura. El ER permite fijar el nivel de reflexiones tempranas de la reverb y el Sep permite
+                realizar una mayor o menor amplitud estéreo del efecto</p>
+                <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                <div class="dialog-box", style="margin-top: 4rem;">
+                    <p>Quizás te costará entender el ER al principio, pero con el tiempo lo entenderás, es todo cuestión
+                    de práctica</p>
+                </div>
+            </div>
+        </div>
+    </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h2>Delay</h2>
+                    <p>Para este efecto vamos a centrarnos tan solo en algunos parámetros, los más importantes para generar
+                        una buena sensación, ¡Así que veamos!, ¿Cuáles son esos parámetros?</p>
+                    <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>El delay tiene muchísimas más configuraciones, pero vamos a hacerlo básico para que no sea tan
+                            complejo entenderlo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/mix_module/basic_techniques/26_delay.gif" >
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/mix_module/basic_techniques/27_input.gif" style="width: 100%;">
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>1. Input</h4>
+                    <p>Con esta opción vamos a decidir que tanta señal vamos a recibir del sonido original, esto puede ser útil
+                        para procesar tan solo una parte del sonido</p>
+                    <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Esta entrada nos puede dar pie a generar un efecto sutil o muy cargado, depende la cantidad de señal
+                            que decidas ingresar al efecto</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>2. Time</h4>
+                    <p>Este nos permitirá definir cuánto tiempo tardará el delay en hacer sus repeticiones, configuralo
+                        según la intención</p>
+                    <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Por ejemplo puedes utilizarlo con un tiempo bajo para generar mayor agresividad o más alto para una
+                            mayor suavidad, todo depende del contexto de tu creación</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/mix_module/basic_techniques/28_time.gif" >
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/mix_module/basic_techniques/29_offset.gif" style="width: 100%;">
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>3. Offset/Pan</h4>
+                    <p>Permite definir si queremos que el sonido del efecto se reproduzca más hacia un lado del estéreo
+                        o repartirlo uniformamente y mantenerlo centrado. Nota: si pones en el delay model el efecto ping pong,
+                        el botón cambiará de modo offset a modo panning</p>
+                    <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Si lo pones hacia la derecha notarás como se replica más hacia la derecha, el mismo efecto se genera
+                            a la izquierda, si lo dejas central el efecto permanecerá en mono</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>4. Delay model</h4>
+                    <p>Aquí encontrarás 4 modos y una perilla de apertura estéreo. Los modos te permitirán elegir como quieres
+                        que se reproduzca tu sonido, la opción mono hará que el efecto se mantenga centrado, estéreo te permite
+                        una apertura hacia los costados del espectro, ping pong generará un efecto tipo rebote, que viajará de lado
+                        a lado y generando un efecto muy interesante, con off apagarás el efecto, este botón pareciera no ser útil
+                        pero te permitirá compara el sonido con y sin efecto aplicado. Finalmente la perilla estéreo te dará la posibilidad
+                        definir la apertura que tendrá el sonido hacia los costados</p>
+                    <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>En lo personal el modo ping pongo me parece muy interesante, pero todo depende de la intención de
+                            tu mezcla, lo que tú desees transmitir</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../media/mix_module/basic_techniques/30_delay_model.gif" >
+            </div>
+        </div><!-- /.row -->
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/mix_module/basic_techniques/31_feedback.gif" style="width: 100%;">
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+                    <h4>5. Feedback</h4>
+                    <p>Con la perilla level podrás definir la cantidad de sonido que tendrá el rebote que genera el efecto y
+                        el crecimiento de la señal con el tiempo, así podrás obtener un sonido más potente de retorno o algo muy
+                        sutil. Con el cutoff podrás definir las frecuencias que predominarán en el efecto, desde los 270Hz-16kHz,
+                        basicamente funciona como un filtro paso bajo o un hi-cut. Resonancia define un crecimiento en el sonido
+                        tras replicarse la primer parte del efecto</p>
+                    <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>De este apartado estas son las opciones más importantes, también tienes los filtros de la derecha
+                            para modificar el sonido. Ya lo sabes, ¡Prueba cada parámetro y revisa cuál te puede aportar!</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.row -->
+        <h2>Delay</h2>
+        <div class="row", style="margin-bottom: 40px">
+            <div class="left">
+                <img src="../media/mix_module/basic_techniques/32_output.gif" style="width: 100%;">
+            </div>
+            <div class="right">
+                <div class="row mb-4", style="margin-top: 4rem;">
+
+                    <h4>6. Output</h4>
+                    <p>Acá encontramos los ya conocidos dry y wet, ya sabes como funcionan estos, sin embargo, también podemos
+                        notar que está la perilla tone, esta es para modificar el tono de salida del sonido, hacia la derecha será
+                        más aguda y hacia la izquierda más grave</p>
+                    <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                    <div class="dialog-box", style="margin-top: 4rem;">
+                        <p>Con esto finalizamos el delay, las demás opciones puedes explorarlas por tu medio y descubrir los
+                            secretos que estas ocultan</p>
+                    </div>
+                </div>
+            </div>
+    </div><!-- /.row -->
+    <div class="row", style="margin-bottom: 40px">
+        <div class="left">
+            <div class="row mb-4", style="margin-top: 4rem;">
+                <h2>¿Cómo utilizar un efecto de modulación?</h2>
+                <p>Estos efectos son muy especiales y se basan más en escucharlos y entenderlos, algunos parámetros de estos
+                se te harán conocidos ya qué los tratamos en plugins anteriores, te definiremos algunos de los que no conoces
+                para que te familiarices con estos. Para el ejemplo puedes cargar los plugins "Fruity chorus", "Fruity flanger",
+                y "Fruity phaser"</p>
+                <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                <div class="dialog-box", style="margin-top: 4rem;">
+                    <p>¡Veamos algunos parámetros desconocidos!</p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <img src="../media/mix_module/basic_techniques/33_modulacion.gif" >
+        </div>
+    </div><!-- /.row -->
+    <div class="row", style="margin-bottom: 40px">
+        <div class="left">
+            <img src="../media/mix_module/basic_techniques/34_depth.gif" >
+        </div>
+        <div class="right">
+            <div class="row mb-4", style="margin-top: 4rem;">
+                <h4>Depth</h4>
+                <p>Este parámetro definirá la profundidad que tendrá el efecto, esto dará una sensación de mayor
+                o menor espacio tras el instrumento dependiendo el valor que le asignes</p>
+                <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                <div class="dialog-box", style="margin-top: 4rem;">
+                    <p>En el phase, por ejemplo, encontrarás este parámetro dividido en max y min, esto te permitirá
+                    crear un rango ajustable para que lo configures a tu gusto</p>
+                </div>
+            </div>
+        </div>
+    </div><!-- /.row -->
+    <div class="row", style="margin-bottom: 40px">
+        <div class="left">
+            <div class="row mb-4", style="margin-top: 4rem;">
+                <h4>Rate</h4>
+                <p>Permite generar un mayor o menor desfase en el sonido, haciendo que pueda deformarse de tal manera
+                que puede generar varios armónicos secundarios y que pueden llegar a generar disonancias en los sonidos</p>
+                <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                <div class="dialog-box", style="margin-top: 4rem;">
+                    <p>Prueba este parámetro en el flanger, entenderás al instante como funciona este parámetro y lo
+                    interesante que puede llegar a ser</p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <img src="../media/mix_module/basic_techniques/35_rate.gif" >
+        </div>
+    </div><!-- /.row -->
+    <div class="row", style="margin-bottom: 40px">
+        <div class="left">
+            <img src="../media/mix_module/basic_techniques/36_shape.gif" >
+        </div>
+        <div class="right">
+            <div class="row mb-4", style="margin-top: 4rem;">
+                <h4>Shape</h4>
+                <p>Permite cambiar la forma del efecto, es similar al diff del reverb</p>
+                <img src="../media/personaje_izquierda.png" style="width: 30%; margin-left: 10%;">
+                <div class="dialog-box", style="margin-top: 4rem;">
+                    <p>Esto puede generar un sonido más digital o un poco más natural en el sonido procesado</p>
+                </div>
+            </div>
+        </div>
+    </div><!-- /.row -->
+    <div class="row", style="margin-bottom: 40px">
+        <div class="left">
+            <div class="row mb-4", style="margin-top: 4rem;">
+                <h4>Sweep freq</h4>
+                <p>Este lo puedes encontrar en el phaser, básicamente permite generar una oscilación entre la profundidad
+                mínima y máxima definida</p>
+                <img src="../media/personaje_izquierda.png" style="width: 40%; margin-left: 20%;">
+                <div class="dialog-box", style="margin-top: 4rem;">
+                    <p>Esto hará que escuches diversas notas en cuestión de segundos, generan una disonancia interesante
+                    e incluso inquietante</p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <img src="../media/mix_module/basic_techniques/37_sweep.gif" >
+        </div>
+    </div><!-- /.row -->
     </div><!-- /.container -->
 </main>
 
