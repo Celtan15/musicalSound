@@ -17,7 +17,7 @@ urlpatterns = [
     path('who_we_are/', views.who_we_are, name='Who_we_are'),
     path('about/', views.about, name='About'),
     path('feedback/', views.feedback, name='Feedback'),
-    path('evaluations_answers/', views.resultado_pregunta, name='Evaluations_answers'),
+    path('evaluations_answers/<int:preg_respondida_pk>/', views.resultado_pregunta, name='Evaluations_answers'),
     path('evaluations_questions/', views.evaluations, name='Evaluations_questions'),
 
 ]

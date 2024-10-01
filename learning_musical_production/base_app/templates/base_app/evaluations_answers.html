@@ -1,0 +1,105 @@
+{% extends 'base_app/head_foot/base.html' %}
+{% block content %}
+<!doctype html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Learning musical production</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+
+    <link href="{% static 'base_app/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <style>
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        h4 {
+            color: black;
+        }
+
+        h3 {
+            color: black;
+        }
+
+        strong {
+            color: black;
+        }
+        .jumbotron {
+            background-color: rgba(110, 160, 202, 0.99); /* Cambia el color hexadecimal según lo que desees */
+        }
+
+
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'interface_module_app/css/manage.css' %}" rel="stylesheet">
+</head>
+<body>
+
+<main>
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+
+
+    <div class="container marketing">
+        <div class="jumbotron my-4">
+            <h3 class="text-info" >{{respondida.pregunta.texto|safe}}</h3>
+            <p>
+                <strong>Tu respuesta:</strong>
+                {{respondida.respuesta.texto_elegir|safe}}
+            </p>
+
+            {% if respondida.respuesta.correcta_elegir %}
+                 <h4 class="text-success"> ¡Felicitaciones! Tu respuesta es correcta</h4>
+            {% else %}
+                <h4 class="text-bg-danger">Tu respuesta es incorrecta</h4>
+
+                {% for respuesta in respondida.pregunta.opciones.all %}
+                    {% if respuesta.correcta_elegir %}
+                        <h4>La respuesta correcta es : <span class="text-success">{{respuesta}}</span></h4>
+                    {% endif %}
+                {% endfor %}
+
+            {% endif %}
+
+            <a href="{% url 'Evaluations_questions' %}">
+                <button class="btn-success">
+                    Continuar
+                </button>
+            </a>
+
+        </div>
+
+    </div><!-- /.container -->
+</main>
+
+<script src="{% static 'base_app/vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'base_app/static/interface_module_app/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+</html>
+
+{% endblock %}

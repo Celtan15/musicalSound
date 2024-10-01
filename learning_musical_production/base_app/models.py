@@ -1,5 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, UserManager, User
+import random
+
 
 class Micro_module(models.Model):
     name=models.CharField(max_length=40)
@@ -34,7 +36,7 @@ class Pregunta(models.Model):
 
     texto = models.TextField(verbose_name='Introduce pregunta')
     max_resultado = models.DecimalField(verbose_name='Calificación máxima', default=3, decimal_places=2, max_digits=6)
-    interface_evaluation = models.ForeignKey('Interface_evaluation', on_delete=models.CASCADE, related_name='preguntas')
+
 
     def __str__(self):
         return self.texto
@@ -89,13 +91,13 @@ class Evaluations (models.Model):
         return random.choice(preguntas_restantes)
 
     def validar_intento(self, pregunta_respondida, respuesta_seleccionada):
-        if pregunta_respondida.pregunta_id != respuesta_seleccionada.pregunta_id:
+        if pregunta_respondida.pregunta_id != respuesta_seleccionada.pregunta_elegir_id:
             return
 
         pregunta_respondida.respuesta_seleccionada = respuesta_seleccionada
-        if respuesta_seleccionada.correcta is True:
+        if respuesta_seleccionada.correcta_elegir is True:
             pregunta_respondida.correcta = True
-            pregunta_respondida.resultado = respuesta_seleccionada.pregunta.max_resultado
+            pregunta_respondida.resultado = respuesta_seleccionada.pregunta_elegir.max_resultado
             pregunta_respondida.respuesta = respuesta_seleccionada
 
         else:

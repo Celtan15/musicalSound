@@ -5,7 +5,7 @@ from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout,authenticate, login
 from base_app.models import Login
-from .models import Evaluations
+from .models import Evaluations, RespuestaUsuario
 from base_app.forms import Sign_up_form
 from django.contrib import messages
 from django.contrib.auth.forms import AuthenticationForm

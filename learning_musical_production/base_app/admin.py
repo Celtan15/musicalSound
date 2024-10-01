@@ -19,7 +19,7 @@ class Workstation_admin(admin.ModelAdmin):
     search_fields=('name','content', 'status')
     readonly_fields=('progression',)
 
-class ElegirRespuestaInline(nested_admin.NestedTabularInline):
+class ElegirRespuestaInline(admin.TabularInline):
     model=ElegirRespuesta
     can_delete=False
     extra=4
@@ -27,10 +27,10 @@ class ElegirRespuestaInline(nested_admin.NestedTabularInline):
     min_num=ElegirRespuesta.MAXIMO_RESPUESTA
     formset=ElegirInlineFormset
 
-class PreguntaInline(nested_admin.NestedStackedInline):
+class PreguntaAdmin(admin.ModelAdmin):
     model = Pregunta
     extra = 1
-    inlines = [ElegirRespuestaInline]
+    inlines = [ElegirRespuestaInline, ]
     list_display=['texto', ]
     search_fields=['texto', 'preguntas__texto']
 
@@ -40,9 +40,9 @@ class RespuestaUsuarioAdmin(admin.ModelAdmin):
     class Meta:
         model=RespuestaUsuario
 
-class Interface_evaluation_admin(nested_admin.NestedModelAdmin):
+class Interface_evaluation_admin(admin.ModelAdmin):
     #list_display=('name', 'qualification', 'number_attempts', 'quantity_microModules')
-    inlines = [PreguntaInline]
+    search_fields=('id','number_attempts','qualification')
 
 class Interface_module_admin(admin.ModelAdmin):
     list_display=('name', 'status', 'progression', 'quantity_microModules')
@@ -65,5 +65,8 @@ admin.site.register(Mastering_module)
 admin.site.register(Interface_evaluation, Interface_evaluation_admin)
 admin.site.register(Mixture_evaluation)
 admin.site.register(Mastering_evaluation)
+admin.site.register(Pregunta, PreguntaAdmin)
+admin.site.register(ElegirRespuesta)
+admin.site.register(RespuestaUsuario)
 
 # Register your models here.
